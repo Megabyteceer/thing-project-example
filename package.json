@@ -1,6 +1,6 @@
 {
-  "name": "rocket_dice",
-  "version": "1.0.0",
+  "name": "thing-project-example",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@xdevteam.com:37234/casino-games/rocket_dice.git"
+    "url": "git+https://github.com/Megabyteceer/thing-project-example.git"
   },
   "author": "",
   "license": "UNLICENSED",
