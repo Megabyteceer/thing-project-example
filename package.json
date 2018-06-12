@@ -1,0 +1,21 @@
+{
+  "name": "rocket_dice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "webpack-dev-server --open --config config/webpack.dev.js",
+    "build": "webpack --config config/webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@xdevteam.com:37234/casino-games/rocket_dice.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "thing-engine": "file:../../engine"
+  },
+  "devDependencies": {}
+}
