@@ -1,6 +1,6 @@
 {
-	"title": "Game-1",
+	"title": "thing-game-1",
 	"icon": "img/bunny.png",
-	"lastSceneName": "levels/2",
+	"lastSceneName": "levels/1",
 	"screenOrientation": "auto"
 }
