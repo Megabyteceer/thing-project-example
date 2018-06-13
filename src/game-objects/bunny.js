@@ -56,6 +56,6 @@ Bunny.getRandom = function() {
 };
 
 /// #if EDITOR
-Bunny.EDITOR_group = "Custom/Bunnies";
+Bunny.__EDITOR_group = "Custom/Bunnies";
 
 /// #endif

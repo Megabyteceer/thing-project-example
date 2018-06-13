@@ -60,8 +60,12 @@ export default class PerspectiveSprite extends PIXI.mesh.Plane {
 		this.vertices[7] = v;
 	}
 }
-PerspectiveSprite.EDITOR_icon = 'tree/perspective'
-PerspectiveSprite.EDITOR_editableProps = [
+
+
+/// #if EDITOR
+
+PerspectiveSprite.__EDITOR_icon = 'tree/perspective';
+PerspectiveSprite.__EDITOR_editableProps = [
 	{
 		type: 'splitter',
 		title: 'Vertices:',
@@ -97,3 +101,5 @@ PerspectiveSprite.EDITOR_editableProps = [
 		type: Number
 	}
 ];
+
+/// #endif
