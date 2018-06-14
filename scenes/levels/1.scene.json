@@ -61,7 +61,7 @@
 						"x": 82,
 						"y": -1,
 						"translatableText": "YES",
-						"style.fontSize": 105
+						"style.fontSize": 21
 					}
 				}
 			]
@@ -141,12 +141,11 @@
 				"x": 15,
 				"y": 664,
 				"text": "---",
-				"style.fontSize": 16,
+				"style.fontSize": 20,
 				"style.align": "left",
 				"style.fill": "#acb",
-				"dataPath": "Bunny.getRandom",
+				"dataPath": "game.mouse.click",
 				"template": "Banny's random: %%",
-				"isNumeric": true,
 				"decimalsCount": 1
 			}
 		},
@@ -163,6 +162,43 @@
 				"template": "Current scene's name: %%",
 				"decimalsCount": 1
 			}
+		},
+		{
+			"c": "NumberInput",
+			"p": {
+				"name": "text-input",
+				"x": 649,
+				"y": 315,
+				"value": 9,
+				"textView": "counter-text"
+			},
+			":": [
+				{
+					"c": "Sprite",
+					"p": {
+						"x": -136,
+						"image": "UI/button.png"
+					}
+				}
+			]
+		},
+		{
+			"c": "Button",
+			"p": {
+				"x": 867,
+				"y": 261,
+				"onClick": "all.text-input.increase"
+			},
+			":": [
+				{
+					"c": "Text",
+					"p": {
+						"y": -24,
+						"text": "+",
+						"style.fontSize": 43
+					}
+				}
+			]
 		}
 	]
 }

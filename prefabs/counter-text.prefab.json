@@ -1,0 +1,10 @@
+{
+	"c": "Text",
+	"p": {
+		"name": "counter-text",
+		"x": 640,
+		"y": 360,
+		"text": "100",
+		"style.fontSize": 60
+	}
+}
