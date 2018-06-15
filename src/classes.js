@@ -13,6 +13,8 @@ import Button from "/engine/js/components/button.js"
 classes["Button"] = Button;
 import Label from "/engine/js/components/label.js"
 classes["Label"] = Label;
+import NumberInput from "/engine/js/components/number-input.js"
+classes["NumberInput"] = NumberInput;
 import Trigger from "/engine/js/components/trigger.js"
 classes["Trigger"] = Trigger;
 import OrientationTrigger from "/engine/js/components/orientation-trigger.js"
@@ -228,6 +230,28 @@ Lib._setClasses(classes,
   "tintG": 255,
   "tintB": 255,
   "blendMode": 0,
+  "name": null,
+  "x": 0,
+  "y": 0,
+  "rotation": 0,
+  "alpha": 1,
+  "visible": true,
+  "scale.x": 1,
+  "scale.y": 1,
+  "skew.x": 0,
+  "skew.y": 0,
+  "pivot.x": 0,
+  "pivot.y": 0
+ },
+ "NumberInput": {
+  "value": 0,
+  "max": 100,
+  "min": 0,
+  "step": 1,
+  "textView": null,
+  "dataPath": null,
+  "refreshInterval": 10,
+  "onChanged": null,
   "name": null,
   "x": 0,
   "y": 0,
