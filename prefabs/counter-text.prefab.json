@@ -4,7 +4,8 @@
 		"name": "counter-text",
 		"x": 640,
 		"y": 360,
+		"pivot.y": 24,
 		"text": "100",
-		"style.fontSize": 60
+		"style.fontSize": 44
 	}
 }

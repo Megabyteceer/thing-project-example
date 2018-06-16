@@ -1,5 +1,5 @@
 const merge = require('webpack-merge');
-const common = require('thing-engine/webpack.global.common.js');
+const common = require('../../../thing-engine/webpack.global.common.js');
 const path = require('path');
 
 

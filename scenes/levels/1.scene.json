@@ -28,8 +28,8 @@
 		{
 			"c": "MovieClip",
 			"p": {
-				"x": 170,
-				"y": 65,
+				"x": 47,
+				"y": 32,
 				"timeline": {
 					"l": {},
 					"p": 0.02,
@@ -39,12 +39,12 @@
 							"n": "x",
 							"t": [
 								{
-									"v": 170,
+									"v": 47,
 									"t": 0,
 									"val": 69
 								},
 								{
-									"v": 367.09662530287426,
+									"v": 244.09662530287426,
 									"t": 147,
 									"val": 266.09662530287426,
 									"m": 1
@@ -58,8 +58,6 @@
 				{
 					"c": "Text",
 					"p": {
-						"x": 82,
-						"y": -1,
 						"translatableText": "YES",
 						"style.fontSize": 21
 					}
@@ -145,7 +143,7 @@
 				"style.align": "left",
 				"style.fill": "#acb",
 				"dataPath": "game.mouse.click",
-				"template": "Banny's random: %%",
+				"template": "Click: %%",
 				"decimalsCount": 1
 			}
 		},
@@ -164,38 +162,142 @@
 			}
 		},
 		{
-			"c": "NumberInput",
+			"c": "DSprite",
 			"p": {
-				"name": "text-input",
-				"x": 649,
-				"y": 315,
-				"value": 9,
-				"textView": "counter-text"
+				"x": 579,
+				"y": 243,
+				"image": "UI/button.png",
+				"tint": 0
 			},
 			":": [
 				{
-					"c": "Sprite",
+					"c": "NumberInput",
 					"p": {
-						"x": -136,
-						"image": "UI/button.png"
+						"name": "text-input",
+						"value": 300,
+						"max": 1000,
+						"min": 10,
+						"step": 10,
+						"textView": "counter-text",
+						"dataPath": "all.progress-bar.scale.x",
+						"valuesList": "10,20,30,50,70,100,150,200,300,400,500,600,700,800,900,1000"
+					},
+					":": [
+						{
+							"c": "Sprite",
+							"p": {
+								"name": "mask",
+								"x": -94,
+								"y": -26,
+								"visible": false,
+								"scale.x": 20,
+								"scale.y": 5,
+								"image": "WHITE"
+							}
+						}
+					]
+				},
+				{
+					"c": "Trigger",
+					"p": {
+						"x": -80,
+						"dataPath": "this.parent.#text-input.canDecrease",
+						"alphaShift": -0.5
+					},
+					":": [
+						{
+							"c": "Button",
+							"p": {
+								"onClick": "this.parent.parent.#text-input.decrease"
+							},
+							":": [
+								{
+									"c": "Text",
+									"p": {
+										"y": -29,
+										"text": " - ",
+										"style.fontSize": 43
+									}
+								}
+							]
+						}
+					]
+				},
+				{
+					"c": "Trigger",
+					"p": {
+						"x": 80,
+						"dataPath": "this.parent.#text-input.canIncrease",
+						"alphaShift": -0.5
+					},
+					":": [
+						{
+							"c": "Button",
+							"p": {
+								"onClick": "this.parent.parent.#text-input.increase"
+							},
+							":": [
+								{
+									"c": "Text",
+									"p": {
+										"y": -24,
+										"text": " + ",
+										"style.fontSize": 43
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"c": "DSprite",
+			"p": {
+				"name": "controlled-bunny",
+				"x": 500,
+				"y": 165,
+				"image": "bunny.png"
+			},
+			":": [
+				{
+					"c": "Label",
+					"p": {
+						"y": -50,
+						"text": "Bunny's x: 500",
+						"style.fontSize": 14,
+						"dataPath": "this.parent.x",
+						"template": "Bunny's x: %%"
 					}
 				}
 			]
 		},
 		{
-			"c": "Button",
+			"c": "Container",
 			"p": {
-				"x": 867,
-				"y": 261,
-				"onClick": "all.text-input.increase"
+				"x": 100,
+				"y": 100,
+				"scale.x": 0.1
 			},
 			":": [
 				{
-					"c": "Text",
+					"c": "Sprite",
 					"p": {
-						"y": -24,
-						"text": "+",
-						"style.fontSize": 43
+						"x": -20,
+						"y": -2,
+						"scale.x": 1004,
+						"scale.y": 1.4,
+						"image": "WHITE",
+						"tint": 6656
+					}
+				},
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "progress-bar",
+						"scale.x": 200,
+						"image": "WHITE",
+						"tint": 10813336
 					}
 				}
 			]

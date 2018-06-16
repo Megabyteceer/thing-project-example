@@ -3,23 +3,23 @@ let classes = {
 			"DSprite":DSprite,
 			"Scene":Scene
 		};
-import Container from "/engine/js/components/container.js"
+import Container from "/thing-engine/js/components/container.js"
 classes["Container"] = Container;
-import MovieClip from "/engine/js/components/movie-clip/movie-clip.js"
+import MovieClip from "/thing-engine/js/components/movie-clip/movie-clip.js"
 classes["MovieClip"] = MovieClip;
-import Text from "/engine/js/components/text.js"
+import Text from "/thing-engine/js/components/text.js"
 classes["Text"] = Text;
-import Button from "/engine/js/components/button.js"
+import Button from "/thing-engine/js/components/button.js"
 classes["Button"] = Button;
-import Label from "/engine/js/components/label.js"
+import Label from "/thing-engine/js/components/label.js"
 classes["Label"] = Label;
-import NumberInput from "/engine/js/components/number-input.js"
+import NumberInput from "/thing-engine/js/components/number-input.js"
 classes["NumberInput"] = NumberInput;
-import Trigger from "/engine/js/components/trigger.js"
+import Trigger from "/thing-engine/js/components/trigger.js"
 classes["Trigger"] = Trigger;
-import OrientationTrigger from "/engine/js/components/orientation-trigger.js"
+import OrientationTrigger from "/thing-engine/js/components/orientation-trigger.js"
 classes["OrientationTrigger"] = OrientationTrigger;
-import NineSlicePlane from "/engine/js/components/nine-slice-plane.js"
+import NineSlicePlane from "/thing-engine/js/components/nine-slice-plane.js"
 classes["NineSlicePlane"] = NineSlicePlane;
 import Bunny from "src/game-objects/bunny.js"
 classes["Bunny"] = Bunny;
@@ -152,7 +152,7 @@ Lib._setClasses(classes,
   "style.fill": "#ffffff",
   "style.stroke": "#000000",
   "style.strokeThickness": 0,
-  "style.fontFamily": "Arial",
+  "style.fontFamily": null,
   "style.fontWeight": "normal",
   "style.leading": 0,
   "style.letterSpacing": 0,
@@ -220,7 +220,7 @@ Lib._setClasses(classes,
   "style.fill": "#ffffff",
   "style.stroke": "#000000",
   "style.strokeThickness": 0,
-  "style.fontFamily": "Arial",
+  "style.fontFamily": null,
   "style.fontWeight": "normal",
   "style.leading": 0,
   "style.letterSpacing": 0,
@@ -252,6 +252,7 @@ Lib._setClasses(classes,
   "dataPath": null,
   "refreshInterval": 10,
   "onChanged": null,
+  "valuesList": null,
   "name": null,
   "x": 0,
   "y": 0,
