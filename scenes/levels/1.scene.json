@@ -59,7 +59,8 @@
 					"c": "Text",
 					"p": {
 						"translatableText": "YES",
-						"style.fontSize": 21
+						"style.fontSize": 20,
+						"style.align": "left"
 					}
 				}
 			]
