@@ -1,10 +1,8 @@
-let classes = {
-			"Sprite":PIXI.Sprite,
-			"DSprite":DSprite,
-			"Scene":Scene
-		};
+let classes = {};
 import Container from "/thing-engine/js/components/container.js"
 classes["Container"] = Container;
+import DSprite from "/thing-engine/js/components/d-sprite.js"
+classes["DSprite"] = DSprite;
 import MovieClip from "/thing-engine/js/components/movie-clip/movie-clip.js"
 classes["MovieClip"] = MovieClip;
 import Text from "/thing-engine/js/components/text.js"
@@ -27,6 +25,8 @@ import PerspectiveSprite from "src/game-objects/perspective-sprite.js"
 classes["PerspectiveSprite"] = PerspectiveSprite;
 import MainMenu from "src/scenes/main-scene.js"
 classes["MainMenu"] = MainMenu;
+import Scene from "/thing-engine/js/components/scene.js"
+classes["Scene"] = Scene;
 Lib._setClasses(classes, 
 {
  "DisplayObject": {

@@ -61,7 +61,8 @@
 							"c": "Text",
 							"p": {
 								"translatableText": "YES",
-								"style.fontSize": 21
+								"style.fontSize": 20,
+								"style.align": "left"
 							}
 						}
 					]
@@ -955,7 +956,7 @@
 			"c": "Scene",
 			"p": {
 				"name": "levels/3",
-				"backgroundColor": 4324025,
+				"backgroundColor": 76060,
 				"faderType": "fader/curtains"
 			},
 			":": [
@@ -1402,17 +1403,15 @@
 					}
 				},
 				{
-					"c": "Label",
+					"c": "Text",
 					"p": {
-						"x": 17,
-						"y": 642,
-						"text": "---",
+						"x": 142,
+						"y": 397,
+						"text": "hgvhgv kj hioJJHYU",
 						"style.fontSize": 16,
 						"style.align": "left",
-						"style.fill": "#243",
-						"dataPath": "game.currentScene.name",
-						"template": "Current scene's name: %%",
-						"decimalsCount": 1
+						"style.fill": "#fff",
+						"style.letterSpacing": 1
 					}
 				},
 				{
@@ -1911,7 +1910,7 @@
 	"projectDesc": {
 		"title": "thing-game-1",
 		"icon": "img/bunny.png",
-		"lastSceneName": "levels/1",
+		"lastSceneName": "levels/3",
 		"screenOrientation": "auto"
 	}
 }

@@ -1,3 +1,5 @@
+import Lib from "/thing-engine/js/lib.js";
+
 export default class PerspectiveSprite extends PIXI.mesh.Plane {
 	
 	constructor() {

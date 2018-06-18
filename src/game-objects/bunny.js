@@ -1,4 +1,5 @@
 import MainMenu from "../scenes/main-scene.js";
+import DSprite from "/thing-engine/js/components/d-sprite.js";
 
 export default class Bunny extends DSprite {
 	
