@@ -1,6 +1,9 @@
+import Lib from "/thing-engine/js/lib.js";
 let classes = {};
 import Container from "/thing-engine/js/components/container.js"
 classes["Container"] = Container;
+import Sprite from "/thing-engine/js/components/sprite.js"
+classes["Sprite"] = Sprite;
 import DSprite from "/thing-engine/js/components/d-sprite.js"
 classes["DSprite"] = DSprite;
 import MovieClip from "/thing-engine/js/components/movie-clip/movie-clip.js"
@@ -23,10 +26,10 @@ import Bunny from "src/game-objects/bunny.js"
 classes["Bunny"] = Bunny;
 import PerspectiveSprite from "src/game-objects/perspective-sprite.js"
 classes["PerspectiveSprite"] = PerspectiveSprite;
-import MainMenu from "src/scenes/main-scene.js"
-classes["MainMenu"] = MainMenu;
 import Scene from "/thing-engine/js/components/scene.js"
 classes["Scene"] = Scene;
+import MainMenu from "src/scenes/main-scene.js"
+classes["MainMenu"] = MainMenu;
 Lib._setClasses(classes, 
 {
  "DisplayObject": {
@@ -182,6 +185,8 @@ Lib._setClasses(classes,
   "onClick": null,
   "afterClick": null,
   "hotkey": 0,
+  "repeatDelay": 0,
+  "repeatInterval": 0,
   "xSpeed": 0,
   "ySpeed": 0,
   "rSpeed": 0,

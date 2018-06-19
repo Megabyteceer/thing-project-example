@@ -95,7 +95,9 @@
 								"x": -23,
 								"y": 18,
 								"image": "UI/button.png",
-								"onClick": "game.showScene`levels/2"
+								"onClick": "game.showScene`levels/2",
+								"repeatDelay": 1,
+								"repeatInterval": 1
 							}
 						},
 						{
@@ -211,7 +213,9 @@
 								{
 									"c": "Button",
 									"p": {
-										"onClick": "this.parent.parent.#text-input.decrease"
+										"onClick": "this.parent.parent.#text-input.decrease",
+										"repeatDelay": 20,
+										"repeatInterval": 8
 									},
 									":": [
 										{
@@ -237,7 +241,9 @@
 								{
 									"c": "Button",
 									"p": {
-										"onClick": "this.parent.parent.#text-input.increase"
+										"onClick": "this.parent.parent.#text-input.increase",
+										"repeatDelay": 20,
+										"repeatInterval": 8
 									},
 									":": [
 										{
@@ -1622,7 +1628,8 @@
 				"pivot.y": 24,
 				"text": "100",
 				"style.fontSize": 44
-			}
+			},
+			"name": "counter-text"
 		},
 		"double-rabbit": {
 			"c": "Bunny",
@@ -1910,7 +1917,7 @@
 	"projectDesc": {
 		"title": "thing-game-1",
 		"icon": "img/bunny.png",
-		"lastSceneName": "levels/3",
+		"lastSceneName": "levels/1",
 		"screenOrientation": "auto"
 	}
 }
