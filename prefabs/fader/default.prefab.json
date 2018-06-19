@@ -2,20 +2,18 @@
 	"c": "OrientationTrigger",
 	"p": {
 		"name": "fader/default",
-		"x": 204,
-		"y": 343,
-		"rotation": 1.5709999999999997,
 		"landscapeX": 640,
 		"landscapeY": 360,
 		"portraitX": 204,
 		"portraitY": 343,
-		"portraitR": 1.5709999999999997
+		"portraitR": 1.571
 	},
 	":": [
 		{
 			"c": "MovieClip",
 			"p": {
 				"name": "fader/default",
+				"alpha": 0,
 				"scale.x": 128,
 				"scale.y": 72,
 				"image": "WHITE",
