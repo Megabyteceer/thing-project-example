@@ -338,6 +338,15 @@
 					}
 				}
 			]
+		},
+		{
+			"c": "Button",
+			"p": {
+				"x": 236,
+				"y": 541,
+				"image": "UI/button.png",
+				"onClick": "FlyText.flyText`asd aksjdhasd"
+			}
 		}
 	]
 }
