@@ -7,8 +7,8 @@ export default class MainMenu extends Scene {
 	
 	update() {
 		MainMenu.count = 0;
+		super.update();
 	}
-	
 }
 
 MainMenu.count = 0;
