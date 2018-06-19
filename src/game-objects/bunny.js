@@ -4,6 +4,7 @@ import DSprite from "/thing-engine/js/components/d-sprite.js";
 export default class Bunny extends DSprite {
 	
 	init() {
+		super.init();
 		this.gravity = 1;
 	}
 	
