@@ -11,7 +11,7 @@
 			"p": {
 				"x": 183,
 				"y": 319,
-				"libReference": "counter-text"
+				"prefabName": "double-rabbit"
 			}
 		},
 		{
@@ -345,7 +345,7 @@
 				"x": 236,
 				"y": 541,
 				"image": "UI/button.png",
-				"onClick": "FlyText.flyText`asd aksjdhasd"
+				"onClick": "FlyText.flyText`+34,50,500"
 			}
 		}
 	]
