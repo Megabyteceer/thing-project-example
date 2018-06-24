@@ -1,8 +1,8 @@
 {
 	"title": "thing-game-1",
-	"id":"thing-project-example.pixel-cave.com",
+	"id": "thing-project-example.pixel-cave.com",
 	"icon": "img/bunny.png",
-	"lastSceneName": "levels/1",
+	"lastSceneName": "levels/3",
 	"screenOrientation": "auto",
 	"defaultFont": "Arial"
 }

@@ -5,8 +5,10 @@ const fs = require('fs');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 let pixiDistPath = path.resolve(__dirname, '../node_modules/pixi.js/dist/pixi.min.js');
+let pixiTilemapDistPath = path.resolve(__dirname, '../node_modules/pixi-tilemap/bin/pixi-tilemap.js');
 if(!fs.existsSync(pixiDistPath)) {
 	pixiDistPath = path.resolve(__dirname, '../../../node_modules/pixi.js/dist/pixi.min.js');
+	pixiTilemapDistPath = path.resolve(__dirname, '../../../node_modules/pixi-tilemap/bin/pixi-tilemap.js');
 }
 
 module.exports = merge(common, {
@@ -18,7 +20,8 @@ module.exports = merge(common, {
 	plugins: [
         new CopyWebpackPlugin([
 			'index.html',
-			{ from:pixiDistPath, to: 'pixi.min.js' }
+			{ from:pixiDistPath, to: 'pixi.min.js' },
+			{ from:pixiTilemapDistPath, to: 'pixi-tilemap.js' }
 		])
     ],
     resolve: {
