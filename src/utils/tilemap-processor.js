@@ -22,7 +22,7 @@ function imageToType(type) {
 }
 
 function getCellType(x, y) {
-	return imageToType(tm.getTile(X, Y));
+	return imageToType(tm.getTile(x, y));
 }
 
 function processCell(x, y, type) {

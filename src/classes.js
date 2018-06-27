@@ -1,51 +1,43 @@
 import Lib from "/thing-engine/js/lib.js";
 let classes = {};
-import Container from "/thing-engine/js/components/container.js"
+import Container from "/thing-engine/js/components/container.js";
 classes["Container"] = Container;
-import Sprite from "/thing-engine/js/components/sprite.js"
+import Sprite from "/thing-engine/js/components/sprite.js";
 classes["Sprite"] = Sprite;
-import DSprite from "/thing-engine/js/components/d-sprite.js"
+import DSprite from "/thing-engine/js/components/d-sprite.js";
 classes["DSprite"] = DSprite;
-import MovieClip from "/thing-engine/js/components/movie-clip/movie-clip.js"
+import MovieClip from "/thing-engine/js/components/movie-clip/movie-clip.js";
 classes["MovieClip"] = MovieClip;
-import Text from "/thing-engine/js/components/text.js"
+import Text from "/thing-engine/js/components/text.js";
 classes["Text"] = Text;
-import Button from "/thing-engine/js/components/button.js"
+import FlyText from "/thing-engine/js/components/fly-text.js";
+classes["FlyText"] = FlyText;
+import Tilemap from "/thing-engine/js/components/tilemap.js";
+classes["Tilemap"] = Tilemap;
+import Button from "/thing-engine/js/components/button.js";
 classes["Button"] = Button;
-import Label from "/thing-engine/js/components/label.js"
+import Label from "/thing-engine/js/components/label.js";
 classes["Label"] = Label;
-import NumberInput from "/thing-engine/js/components/number-input.js"
+import NumberInput from "/thing-engine/js/components/number-input.js";
 classes["NumberInput"] = NumberInput;
-import Trigger from "/thing-engine/js/components/trigger.js"
+import Trigger from "/thing-engine/js/components/trigger.js";
 classes["Trigger"] = Trigger;
-import OrientationTrigger from "/thing-engine/js/components/orientation-trigger.js"
+import OrientationTrigger from "/thing-engine/js/components/orientation-trigger.js";
 classes["OrientationTrigger"] = OrientationTrigger;
-import NineSlicePlane from "/thing-engine/js/components/nine-slice-plane.js"
+import NineSlicePlane from "/thing-engine/js/components/nine-slice-plane.js";
 classes["NineSlicePlane"] = NineSlicePlane;
-import Bunny from "src/game-objects/bunny.js"
+import PrefabReference from "/thing-engine/js/components/prefab-reference.js";
+classes["PrefabReference"] = PrefabReference;
+import Bunny from "src/game-objects/bunny.js";
 classes["Bunny"] = Bunny;
-import PerspectiveSprite from "src/game-objects/perspective-sprite.js"
+import PerspectiveSprite from "src/game-objects/perspective-sprite.js";
 classes["PerspectiveSprite"] = PerspectiveSprite;
-import Scene from "/thing-engine/js/components/scene.js"
+import Scene from "/thing-engine/js/components/scene.js";
 classes["Scene"] = Scene;
-import MainMenu from "src/scenes/main-scene.js"
+import MainMenu from "src/scenes/main-scene.js";
 classes["MainMenu"] = MainMenu;
 Lib._setClasses(classes, 
 {
- "DisplayObject": {
-  "name": null,
-  "x": 0,
-  "y": 0,
-  "rotation": 0,
-  "alpha": 1,
-  "visible": true,
-  "scale.x": 1,
-  "scale.y": 1,
-  "skew.x": 0,
-  "skew.y": 0,
-  "pivot.x": 0,
-  "pivot.y": 0
- },
  "Container": {
   "name": null,
   "x": 0,
@@ -129,24 +121,6 @@ Lib._setClasses(classes,
   "pivot.x": 0,
   "pivot.y": 0
  },
- "Scene": {
-  "isStatic": false,
-  "isNoStackable": false,
-  "backgroundColor": 16777215,
-  "faderType": null,
-  "name": null,
-  "x": 0,
-  "y": 0,
-  "rotation": 0,
-  "alpha": 1,
-  "visible": true,
-  "scale.x": 1,
-  "scale.y": 1,
-  "skew.x": 0,
-  "skew.y": 0,
-  "pivot.x": 0,
-  "pivot.y": 0
- },
  "Text": {
   "text": " ",
   "translatableText": null,
@@ -165,6 +139,59 @@ Lib._setClasses(classes,
   "tintG": 255,
   "tintB": 255,
   "blendMode": 0,
+  "name": null,
+  "x": 0,
+  "y": 0,
+  "rotation": 0,
+  "alpha": 1,
+  "visible": true,
+  "scale.x": 1,
+  "scale.y": 1,
+  "skew.x": 0,
+  "skew.y": 0,
+  "pivot.x": 0,
+  "pivot.y": 0
+ },
+ "FlyText": {
+  "text": " ",
+  "translatableText": null,
+  "style.fontSize": 12,
+  "style.align": "center",
+  "style.fill": "#ffffff",
+  "style.stroke": "#000000",
+  "style.strokeThickness": 0,
+  "style.fontFamily": null,
+  "style.fontWeight": "normal",
+  "style.leading": 0,
+  "style.letterSpacing": 0,
+  "image": "EMPTY",
+  "tint": 16777215,
+  "tintR": 255,
+  "tintG": 255,
+  "tintB": 255,
+  "blendMode": 0,
+  "name": null,
+  "x": 0,
+  "y": 0,
+  "rotation": 0,
+  "alpha": 1,
+  "visible": true,
+  "scale.x": 1,
+  "scale.y": 1,
+  "skew.x": 0,
+  "skew.y": 0,
+  "pivot.x": 0,
+  "pivot.y": 0
+ },
+ "Tilemap": {
+  "image": "EMPTY",
+  "tilemap": null,
+  "rows": 8,
+  "columns": 8,
+  "tileW": 64,
+  "tileH": 64,
+  "wField": 0,
+  "hField": 0,
   "name": null,
   "x": 0,
   "y": 0,
@@ -346,6 +373,21 @@ Lib._setClasses(classes,
   "pivot.x": 0,
   "pivot.y": 0
  },
+ "PrefabReference": {
+  "prefabName": null,
+  "name": null,
+  "x": 0,
+  "y": 0,
+  "rotation": 0,
+  "alpha": 1,
+  "visible": true,
+  "scale.x": 1,
+  "scale.y": 1,
+  "skew.x": 0,
+  "skew.y": 0,
+  "pivot.x": 0,
+  "pivot.y": 0
+ },
  "Bunny": {
   "xSpeed": 0,
   "ySpeed": 0,
@@ -384,6 +426,24 @@ Lib._setClasses(classes,
   "tintG": 255,
   "tintB": 255,
   "blendMode": 0,
+  "name": null,
+  "x": 0,
+  "y": 0,
+  "rotation": 0,
+  "alpha": 1,
+  "visible": true,
+  "scale.x": 1,
+  "scale.y": 1,
+  "skew.x": 0,
+  "skew.y": 0,
+  "pivot.x": 0,
+  "pivot.y": 0
+ },
+ "Scene": {
+  "isStatic": false,
+  "isNoStackable": false,
+  "backgroundColor": 16777215,
+  "faderType": null,
   "name": null,
   "x": 0,
   "y": 0,

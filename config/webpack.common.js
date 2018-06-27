@@ -1,3 +1,6 @@
+/*global module */
+/*global require */
+/*global __dirname */
 const merge = require('webpack-merge');
 const common = require('../../../thing-engine/webpack.global.common.js');
 const path = require('path');
@@ -12,21 +15,21 @@ if(!fs.existsSync(pixiDistPath)) {
 }
 
 module.exports = merge(common, {
-    entry: ['./src/index.js'],
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, '../release')
-    },
+	entry: ['./src/index.js'],
+	output: {
+		filename: 'bundle.js',
+		path: path.resolve(__dirname, '../release')
+	},
 	plugins: [
-        new CopyWebpackPlugin([
+		new CopyWebpackPlugin([
 			'index.html',
 			{ from:pixiDistPath, to: 'pixi.min.js' },
 			{ from:pixiTilemapDistPath, to: 'pixi-tilemap.js' }
 		])
-    ],
-    resolve: {
+	],
+	resolve: {
 		alias: {
 			'src': path.resolve(__dirname, '../src')
 		}
-    }
+	}
 });
