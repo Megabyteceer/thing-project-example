@@ -2,23 +2,37 @@ import Lib from "/thing-engine/js/lib.js";
 
 let tm;
 
+const GROUND = 1;
+const WALL = 2;
+
+
 const types = [
-	'line',
-	'brick'
+	{name:'Groung', value: GROUND},
+	{name:'Wall', value: WALL}
 ];
 
-Lib.timapProcessor = {
+const imgIdToType = [
+	GROUND,
+	GROUND,
+	WALL,
+	WALL
+];
+
+
+Lib.tileMapProcessor = {
 	onTileEditCallback:(tilemap, x, y, type) => {
 		tm = tilemap;
 		processCell(x, y, type);
+		y++;
+		processCell(x, y, getCellType(x,y));
 	},
 	imageToType,
 	types,
 	getCellType
 };
 
-function imageToType(type) {
-	return type;
+function imageToType(imgId) {
+	return imgIdToType[imgId];
 }
 
 function getCellType(x, y) {
@@ -26,7 +40,13 @@ function getCellType(x, y) {
 }
 
 function processCell(x, y, type) {
-	tm.setTile(x, y, type);
+	let imgId = (type - 1) * 2;
+
+	if(y > 0 && getCellType(x, y-1) === WALL) {
+		imgId ++;
+	}
+	console.log(imgId);
+	tm.setTile(x, y, imgId);
 }
 
 export default null;

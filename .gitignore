@@ -30,5 +30,7 @@ typings/
 # All dot started folders and files
 .*
 
+*.fla
+
 public/js/lib
 public/css/lib
