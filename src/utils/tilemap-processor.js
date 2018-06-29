@@ -17,6 +17,7 @@ const imgIdToType = [
 	WALL,
 	WALL
 ];
+imgIdToType[-1] = -1;
 
 
 Lib.tileMapProcessor = {
@@ -40,12 +41,15 @@ function getCellType(x, y) {
 }
 
 function processCell(x, y, type) {
-	let imgId = (type - 1) * 2;
+	if(type < 0) { //erasing
+		tm.setTile(x, y, -1);
+		return;
+	}
 
+	let imgId = (type - 1) * 2;
 	if(y > 0 && getCellType(x, y-1) === WALL) {
 		imgId ++;
 	}
-	console.log(imgId);
 	tm.setTile(x, y, imgId);
 }
 
