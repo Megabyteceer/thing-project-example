@@ -2,107 +2,102 @@
 	"c": "MainMenu",
 	"p": {
 		"name": "main",
+		"isScrollable": true,
 		"backgroundColor": 2823437
 	},
 	":": [
 		{
-			"c": "DSprite",
-			"p": {},
-			":": [
-				{
-					"c": "Tilemap",
-					"p": {
-						"image": "map/map1.png",
-						"tilemap": [
-							[
-								2,
-								3,
-								3,
-								3,
-								3,
-								3,
-								-1,
-								-1
-							],
-							[
-								2,
-								1,
-								0,
-								0,
-								0,
-								2,
-								3,
-								3
-							],
-							[
-								2,
-								1,
-								2,
-								3,
-								1,
-								0,
-								0,
-								2
-							],
-							[
-								2,
-								1,
-								2,
-								3,
-								3,
-								3,
-								1,
-								2
-							],
-							[
-								2,
-								1,
-								0,
-								0,
-								0,
-								0,
-								0,
-								2
-							],
-							[
-								2,
-								3,
-								1,
-								2,
-								3,
-								3,
-								1,
-								2
-							],
-							[
-								2,
-								3,
-								1,
-								0,
-								0,
-								0,
-								0,
-								2
-							],
-							[
-								-1,
-								2,
-								3,
-								3,
-								3,
-								3,
-								3,
-								3
-							]
-						],
-						"tileW": 100,
-						"tileH": 100,
-						"wField": 1,
-						"hField": 1
-					},
-					":": []
-				}
-			]
+			"c": "Tilemap",
+			"p": {
+				"image": "map/map1.png",
+				"tilemap": [
+					[
+						-1,
+						-1,
+						2,
+						3,
+						3,
+						3,
+						-1,
+						-1
+					],
+					[
+						-1,
+						-1,
+						2,
+						1,
+						0,
+						2,
+						3,
+						3
+					],
+					[
+						2,
+						3,
+						3,
+						1,
+						0,
+						0,
+						0,
+						2
+					],
+					[
+						2,
+						-1,
+						2,
+						1,
+						0,
+						0,
+						0,
+						2
+					],
+					[
+						2,
+						-1,
+						2,
+						1,
+						0,
+						0,
+						0,
+						2
+					],
+					[
+						2,
+						3,
+						3,
+						1,
+						0,
+						0,
+						0,
+						2
+					],
+					[
+						-1,
+						2,
+						1,
+						0,
+						0,
+						0,
+						0,
+						2
+					],
+					[
+						-1,
+						2,
+						3,
+						3,
+						3,
+						3,
+						3,
+						3
+					]
+				],
+				"tileW": 100,
+				"tileH": 100,
+				"wField": 1,
+				"hField": 1
+			},
+			":": []
 		},
 		{
 			"c": "OrientationTrigger",
@@ -116,7 +111,8 @@
 				{
 					"c": "PerspectiveSprite",
 					"p": {
-						"y": -28,
+						"x": 306,
+						"y": -80,
 						"image": "UI/button.png",
 						"x0": 20,
 						"x1": 236,
@@ -149,7 +145,9 @@
 					"c": "Button",
 					"p": {
 						"image": "bunny.png",
-						"onClick": "game.closeCurrentScene"
+						"onClick": "game.closeCurrentScene",
+						"sndClick": "click",
+						"sndOver": "over"
 					}
 				}
 			]
@@ -168,7 +166,9 @@
 					"p": {
 						"y": -31,
 						"image": "UI/button.png",
-						"onClick": "game.showScene`levels/1"
+						"onClick": "game.showScene`levels/1",
+						"sndClick": "click",
+						"sndOver": "over"
 					}
 				},
 				{
@@ -177,7 +177,9 @@
 						"x": -1,
 						"y": 53,
 						"image": "UI/button.png",
-						"onClick": "game.showScene`levels/2"
+						"onClick": "game.showScene`levels/2",
+						"sndClick": "click",
+						"sndOver": "over"
 					}
 				}
 			]
@@ -248,6 +250,16 @@
 				"x": 385,
 				"y": 178,
 				"image": "bunny.png"
+			}
+		},
+		{
+			"c": "Button",
+			"p": {
+				"x": 960,
+				"y": 147,
+				"image": "UI/button.png",
+				"sndClick": "click",
+				"sndOver": "over"
 			}
 		}
 	]
