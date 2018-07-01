@@ -1,5 +1,6 @@
 import MainMenu from "../scenes/main-scene.js";
 import DSprite from "/thing-engine/js/components/d-sprite.js";
+import game from "/thing-engine/js/game.js";
 
 export default class Bunny extends DSprite {
 	
@@ -11,7 +12,7 @@ export default class Bunny extends DSprite {
 	update() {
 		MainMenu.count++;
 		this.vertexData[2] += Math.random();
-		if (this.y > H - 25) {
+		if (this.y > game.H - 25) {
 			this.onTouchBounds();
 			this.ySpeed = -Math.abs(this.ySpeed);
 		} else if(this.y < 0) {
@@ -30,8 +31,8 @@ export default class Bunny extends DSprite {
 			this.xSpeed *= -1.0;
 		}
 		
-		if (this.x > W) {
-			this.x = W;
+		if (this.x > game.W) {
+			this.x = game.W;
 			this.onTouchBounds();
 			this.xSpeed *= -1.0;
 		}

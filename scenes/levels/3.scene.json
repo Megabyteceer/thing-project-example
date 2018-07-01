@@ -2,106 +2,11 @@
 	"c": "Scene",
 	"p": {
 		"name": "levels/3",
-		"x": -148.20494300000007,
-		"y": -89.91360700000001,
-		"scale.x": 0.5314410000000002,
-		"scale.y": 0.5314410000000002,
 		"isScrollable": true,
 		"backgroundColor": 0,
 		"faderType": "fader/curtains"
 	},
 	":": [
-		{
-			"c": "Tilemap",
-			"p": {
-				"image": "map/map1.png",
-				"tilemap": [
-					[
-						2,
-						3,
-						3,
-						3,
-						3,
-						3,
-						-1,
-						-1
-					],
-					[
-						2,
-						1,
-						0,
-						0,
-						0,
-						2,
-						3,
-						3
-					],
-					[
-						2,
-						1,
-						2,
-						3,
-						1,
-						0,
-						0,
-						2
-					],
-					[
-						2,
-						1,
-						2,
-						3,
-						3,
-						3,
-						1,
-						2
-					],
-					[
-						2,
-						1,
-						0,
-						0,
-						0,
-						0,
-						0,
-						2
-					],
-					[
-						2,
-						3,
-						1,
-						2,
-						3,
-						3,
-						1,
-						2
-					],
-					[
-						-1,
-						2,
-						1,
-						0,
-						0,
-						0,
-						0,
-						2
-					],
-					[
-						-1,
-						2,
-						3,
-						3,
-						3,
-						3,
-						3,
-						-1
-					]
-				],
-				"tileW": 128,
-				"tileH": 128
-			},
-			":": []
-		},
 		{
 			"c": "Bunny",
 			"p": {
@@ -302,13 +207,22 @@
 		{
 			"c": "Text",
 			"p": {
-				"x": 142,
-				"y": 397,
+				"x": 1002,
+				"y": 220,
 				"text": "hgvhgv kj hioJJHYU",
-				"style.fontSize": 16,
+				"style.fontSize": 22,
+				"style.fill": "#fff"
+			}
+		},
+		{
+			"c": "Text",
+			"p": {
+				"x": 903,
+				"y": 243,
+				"text": "hgvhgv kj hioJJHYU",
+				"style.fontSize": 22,
 				"style.align": "left",
-				"style.fill": "#fff",
-				"style.letterSpacing": 1
+				"style.fill": "#fff"
 			}
 		},
 		{
