@@ -61,7 +61,9 @@
 							"p": {
 								"image": "bunny.png",
 								"onClick": "game.currentScene.gotoLabelRecursive`dock",
-								"afterClick": "this.parent.gotoLabel`activate"
+								"afterClick": "this.parent.gotoLabel`activate",
+								"sndClick": "click",
+								"sndOver": "over"
 							}
 						}
 					]
@@ -123,7 +125,9 @@
 							"p": {
 								"image": "bunny.png",
 								"onClick": "game.currentScene.gotoLabelRecursive`dock",
-								"afterClick": "this.parent.gotoLabel`activate"
+								"afterClick": "this.parent.gotoLabel`activate",
+								"sndClick": "click",
+								"sndOver": "over"
 							}
 						}
 					]
@@ -185,7 +189,9 @@
 							"p": {
 								"image": "bunny.png",
 								"onClick": "game.currentScene.gotoLabelRecursive`dock",
-								"afterClick": "this.parent.gotoLabel`activate"
+								"afterClick": "this.parent.gotoLabel`activate",
+								"sndClick": "click",
+								"sndOver": "over"
 							}
 						}
 					]
@@ -303,7 +309,9 @@
 							"p": {
 								"image": "bunny.png",
 								"onClick": "game.currentScene.gotoLabelRecursive`dock",
-								"afterClick": "this.parent.gotoLabel`activate"
+								"afterClick": "this.parent.gotoLabel`activate",
+								"sndClick": "click",
+								"sndOver": "over"
 							}
 						}
 					]
@@ -365,7 +373,9 @@
 							"p": {
 								"image": "bunny.png",
 								"onClick": "game.currentScene.gotoLabelRecursive`dock",
-								"afterClick": "this.parent.gotoLabel`activate"
+								"afterClick": "this.parent.gotoLabel`activate",
+								"sndClick": "click",
+								"sndOver": "over"
 							}
 						}
 					]
@@ -427,7 +437,9 @@
 							"p": {
 								"image": "bunny.png",
 								"onClick": "game.currentScene.gotoLabelRecursive`dock",
-								"afterClick": "this.parent.gotoLabel`activate"
+								"afterClick": "this.parent.gotoLabel`activate",
+								"sndClick": "click",
+								"sndOver": "over"
 							}
 						}
 					]
@@ -489,7 +501,9 @@
 							"p": {
 								"image": "bunny.png",
 								"onClick": "game.currentScene.gotoLabelRecursive`dock",
-								"afterClick": "this.parent.gotoLabel`activate"
+								"afterClick": "this.parent.gotoLabel`activate",
+								"sndClick": "click",
+								"sndOver": "over"
 							}
 						}
 					]
@@ -513,7 +527,9 @@
 				"x": 177,
 				"y": 471,
 				"image": "UI/button.png",
-				"onClick": "game.showScene`levels/3"
+				"onClick": "game.showScene`levels/3",
+				"sndClick": "click",
+				"sndOver": "over"
 			},
 			":": [
 				{
@@ -582,7 +598,9 @@
 						"x": -107,
 						"y": -7,
 						"image": "UI/button.png",
-						"onClick": "this.parent.parent.#bunny.setGravity`3"
+						"onClick": "this.parent.parent.#bunny.setGravity`3",
+						"sndClick": "click",
+						"sndOver": "over"
 					},
 					":": [
 						{
@@ -604,7 +622,9 @@
 						"x": 150,
 						"y": -7,
 						"image": "UI/button.png",
-						"onClick": "this.parent.parent.#bunny.setGravity`1"
+						"onClick": "this.parent.parent.#bunny.setGravity`1",
+						"sndClick": "click",
+						"sndOver": "over"
 					},
 					":": [
 						{
@@ -636,7 +656,9 @@
 					"c": "Button",
 					"p": {
 						"image": "bunny.png",
-						"onClick": "game.closeCurrentScene"
+						"onClick": "game.closeCurrentScene",
+						"sndClick": "click",
+						"sndOver": "over"
 					}
 				}
 			]

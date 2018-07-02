@@ -3,7 +3,9 @@
 	"p": {
 		"name": "main",
 		"isScrollable": true,
-		"backgroundColor": 2823437
+		"backgroundColor": 2823437,
+		"musicIntro": "mus/title_i",
+		"musicLoop": "mus/title"
 	},
 	":": [
 		{

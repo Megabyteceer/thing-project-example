@@ -90,7 +90,9 @@
 				"x": 1084,
 				"y": 503,
 				"image": "UI/button.png",
-				"onClick": "game.showScene`main"
+				"onClick": "game.showScene`main",
+				"sndClick": "click",
+				"sndOver": "over"
 			}
 		},
 		{
@@ -239,7 +241,9 @@
 					"c": "Button",
 					"p": {
 						"image": "bunny.png",
-						"onClick": "game.closeCurrentScene"
+						"onClick": "game.closeCurrentScene",
+						"sndClick": "click",
+						"sndOver": "over"
 					}
 				}
 			]
