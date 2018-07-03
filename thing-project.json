@@ -2,7 +2,7 @@
 	"title": "thing-game-1",
 	"id": "thing-project-example.pixel-cave.com",
 	"icon": "img/bunny.png",
-	"lastSceneName": "main",
+	"lastSceneName": "levels/1",
 	"screenOrientation": "auto",
 	"defaultFont": "Arial"
 }
