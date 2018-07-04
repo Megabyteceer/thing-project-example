@@ -1,0 +1,28 @@
+{
+	"c": "Container",
+	"p": {
+		"name": "ui/panel",
+		"x": 640,
+		"y": 360
+	},
+	":": [
+		{
+			"c": "Button",
+			"p": {
+				"x": 1247,
+				"y": 39,
+				"image": "bunny.png",
+				"sndClick": "click",
+				"sndOver": "over"
+			}
+		},
+		{
+			"c": "Label",
+			"p": {
+				"x": 37,
+				"y": 681,
+				"dataPath": "game.currentScene.localPlayer.currentHp"
+			}
+		}
+	]
+}
