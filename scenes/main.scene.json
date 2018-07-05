@@ -2,7 +2,6 @@
 	"c": "MainMenu",
 	"p": {
 		"name": "main",
-		"isScrollable": true,
 		"backgroundColor": 2823437,
 		"musicIntro": "mus/title_i",
 		"musicLoop": "mus/title"
@@ -11,21 +10,19 @@
 		{
 			"c": "OrientationTrigger",
 			"p": {
-				"landscapeX": 512,
-				"landscapeY": 338,
-				"portraitX": 81,
-				"portraitY": 225
+				"landscapeX": 45,
+				"landscapeY": 110,
+				"portraitX": 39,
+				"portraitY": 170
 			},
 			":": [
 				{
 					"c": "PerspectiveSprite",
 					"p": {
-						"x": 306,
-						"y": -80,
-						"image": "ui/button.png",
-						"x1": 256,
+						"image": "bunny.png",
+						"x1": 32,
 						"y2": 64,
-						"x3": 256,
+						"x3": 32,
 						"y3": 64
 					}
 				}
@@ -38,27 +35,6 @@
 				"y": 153,
 				"image": "ui/button.png"
 			}
-		},
-		{
-			"c": "OrientationTrigger",
-			"p": {
-				"name": "close-btn",
-				"landscapeX": 1246,
-				"landscapeY": 40,
-				"portraitX": 371,
-				"portraitY": 43
-			},
-			":": [
-				{
-					"c": "Button",
-					"p": {
-						"image": "bunny.png",
-						"onClick": "game.closeCurrentScene",
-						"sndClick": "click",
-						"sndOver": "over"
-					}
-				}
-			]
 		},
 		{
 			"c": "OrientationTrigger",
@@ -166,194 +142,26 @@
 				"x": 960,
 				"y": 147,
 				"image": "ui/button.png",
-				"onClick": "game.showModal`counter-text",
+				"onClick": "game.showModal`modal-settings",
 				"sndClick": "click",
 				"sndOver": "over"
 			}
 		},
 		{
-			"c": "DSprite",
+			"c": "OrientationTrigger",
 			"p": {
-				"x": 1023,
-				"y": 395,
-				"image": "ui/button.png",
-				"tint": 0
+				"landscapeX": 640,
+				"landscapeY": 25,
+				"portraitX": 205,
+				"portraitY": 25
 			},
 			":": [
 				{
-					"c": "NumberInput",
+					"c": "Text",
 					"p": {
-						"name": "text-input",
-						"value": 10,
-						"step": 10,
-						"textView": "counter-text",
-						"dataPath": "game.Sound.musicVol"
-					},
-					":": [
-						{
-							"c": "Sprite",
-							"p": {
-								"name": "mask",
-								"x": -94,
-								"y": -26,
-								"visible": false,
-								"scale.x": 20,
-								"scale.y": 5,
-								"image": "WHITE"
-							}
-						}
-					]
-				},
-				{
-					"c": "Trigger",
-					"p": {
-						"x": -80,
-						"dataPath": "this.parent.#text-input.canDecrease",
-						"alphaShift": -0.5
-					},
-					":": [
-						{
-							"c": "Button",
-							"p": {
-								"onClick": "this.parent.parent.#text-input.decrease",
-								"repeatDelay": 20,
-								"repeatInterval": 8
-							},
-							":": [
-								{
-									"c": "Text",
-									"p": {
-										"y": -29,
-										"text": " - ",
-										"style.fontSize": 43
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"c": "Trigger",
-					"p": {
-						"x": 80,
-						"dataPath": "this.parent.#text-input.canIncrease",
-						"alphaShift": -0.5
-					},
-					":": [
-						{
-							"c": "Button",
-							"p": {
-								"onClick": "this.parent.parent.#text-input.increase",
-								"repeatDelay": 20,
-								"repeatInterval": 8
-							},
-							":": [
-								{
-									"c": "Text",
-									"p": {
-										"y": -24,
-										"text": " + ",
-										"style.fontSize": 43
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"c": "DSprite",
-			"p": {
-				"x": 1023,
-				"y": 468,
-				"image": "ui/button.png",
-				"tint": 0
-			},
-			":": [
-				{
-					"c": "NumberInput",
-					"p": {
-						"name": "text-input",
-						"value": 10,
-						"step": 10,
-						"textView": "counter-text",
-						"dataPath": "game.Sound.soundsVol"
-					},
-					":": [
-						{
-							"c": "Sprite",
-							"p": {
-								"name": "mask",
-								"x": -94,
-								"y": -26,
-								"visible": false,
-								"scale.x": 20,
-								"scale.y": 5,
-								"image": "WHITE"
-							}
-						}
-					]
-				},
-				{
-					"c": "Trigger",
-					"p": {
-						"x": -80,
-						"dataPath": "this.parent.#text-input.canDecrease",
-						"alphaShift": -0.5
-					},
-					":": [
-						{
-							"c": "Button",
-							"p": {
-								"onClick": "this.parent.parent.#text-input.decrease",
-								"sndClick": "click",
-								"sndOver": "over",
-								"repeatDelay": 20,
-								"repeatInterval": 8
-							},
-							":": [
-								{
-									"c": "Text",
-									"p": {
-										"y": -29,
-										"text": " - ",
-										"style.fontSize": 43
-									}
-								}
-							]
-						}
-					]
-				},
-				{
-					"c": "Trigger",
-					"p": {
-						"x": 80,
-						"dataPath": "this.parent.#text-input.canIncrease",
-						"alphaShift": -0.5
-					},
-					":": [
-						{
-							"c": "Button",
-							"p": {
-								"onClick": "this.parent.parent.#text-input.increase",
-								"sndClick": "click",
-								"sndOver": "over",
-								"repeatDelay": 20,
-								"repeatInterval": 8
-							},
-							":": [
-								{
-									"c": "Text",
-									"p": {
-										"y": -24,
-										"text": " + ",
-										"style.fontSize": 43
-									}
-								}
-							]
-						}
-					]
+						"translatableText": "TITLE",
+						"style.fontSize": 48
+					}
 				}
 			]
 		}
