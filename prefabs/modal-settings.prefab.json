@@ -50,7 +50,8 @@
 				{
 					"c": "ProgressBar",
 					"p": {
-						"dataPath": "game.Sound.musicVol"
+						"dataPath": "game.Sound.musicVol",
+						"refreshInterval": 1
 					},
 					":": [
 						{
@@ -157,6 +158,7 @@
 				"y": -19,
 				"rotation": 1.571,
 				"dataPath": "game.Sound.musicVol",
+				"refreshInterval": 1,
 				"isScrollable": true
 			},
 			":": [
@@ -215,7 +217,8 @@
 				{
 					"c": "ProgressBar",
 					"p": {
-						"dataPath": "game.Sound.soundsVol"
+						"dataPath": "game.Sound.soundsVol",
+						"refreshInterval": 1
 					},
 					":": [
 						{
@@ -269,7 +272,6 @@
 							"c": "Button",
 							"p": {
 								"onClick": "this.parent.parent.#text-input.decrease",
-								"sndClick": "click",
 								"sndOver": "over",
 								"repeatDelay": 20,
 								"repeatInterval": 8
@@ -299,7 +301,6 @@
 							"c": "Button",
 							"p": {
 								"onClick": "this.parent.parent.#text-input.increase",
-								"sndClick": "click",
 								"sndOver": "over",
 								"repeatDelay": 20,
 								"repeatInterval": 8
@@ -326,6 +327,8 @@
 				"y": 185,
 				"rotation": 1.571,
 				"dataPath": "game.Sound.soundsVol",
+				"refreshInterval": 1,
+				"onChanged": "game.Sound.play`click",
 				"isScrollable": true
 			},
 			":": [

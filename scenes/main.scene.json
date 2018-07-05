@@ -10,6 +10,34 @@
 		{
 			"c": "OrientationTrigger",
 			"p": {
+				"landscapeX": 640,
+				"landscapeY": 25,
+				"portraitX": 205,
+				"portraitY": 25
+			},
+			":": [
+				{
+					"c": "DSprite",
+					"p": {
+						"y": 56,
+						"scale.x": 48,
+						"scale.y": 12,
+						"image": "WHITE",
+						"tint": 0
+					}
+				},
+				{
+					"c": "Text",
+					"p": {
+						"translatableText": "TITLE",
+						"style.fontSize": 48
+					}
+				}
+			]
+		},
+		{
+			"c": "OrientationTrigger",
+			"p": {
 				"landscapeX": 45,
 				"landscapeY": 110,
 				"portraitX": 39,
@@ -146,24 +174,6 @@
 				"sndClick": "click",
 				"sndOver": "over"
 			}
-		},
-		{
-			"c": "OrientationTrigger",
-			"p": {
-				"landscapeX": 640,
-				"landscapeY": 25,
-				"portraitX": 205,
-				"portraitY": 25
-			},
-			":": [
-				{
-					"c": "Text",
-					"p": {
-						"translatableText": "TITLE",
-						"style.fontSize": 48
-					}
-				}
-			]
 		}
 	]
 }
