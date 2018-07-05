@@ -22,7 +22,7 @@
 					"p": {
 						"x": 306,
 						"y": -80,
-						"image": "UI/button.png",
+						"image": "ui/button.png",
 						"x1": 256,
 						"y2": 64,
 						"x3": 256,
@@ -36,7 +36,7 @@
 			"p": {
 				"x": 127,
 				"y": 153,
-				"image": "UI/button.png"
+				"image": "ui/button.png"
 			}
 		},
 		{
@@ -73,7 +73,7 @@
 					"c": "Button",
 					"p": {
 						"y": -31,
-						"image": "UI/button.png",
+						"image": "ui/button.png",
 						"onClick": "game.showScene`levels/1",
 						"sndClick": "click",
 						"sndOver": "over"
@@ -84,7 +84,7 @@
 					"p": {
 						"x": -1,
 						"y": 53,
-						"image": "UI/button.png",
+						"image": "ui/button.png",
 						"onClick": "game.showScene`levels/2",
 						"sndClick": "click",
 						"sndOver": "over"
@@ -165,7 +165,7 @@
 			"p": {
 				"x": 960,
 				"y": 147,
-				"image": "UI/button.png",
+				"image": "ui/button.png",
 				"onClick": "game.showModal`counter-text",
 				"sndClick": "click",
 				"sndOver": "over"
@@ -176,7 +176,7 @@
 			"p": {
 				"x": 1023,
 				"y": 395,
-				"image": "UI/button.png",
+				"image": "ui/button.png",
 				"tint": 0
 			},
 			":": [
@@ -267,7 +267,7 @@
 			"p": {
 				"x": 1023,
 				"y": 468,
-				"image": "UI/button.png",
+				"image": "ui/button.png",
 				"tint": 0
 			},
 			":": [

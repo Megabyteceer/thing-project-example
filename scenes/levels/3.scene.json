@@ -89,7 +89,7 @@
 			"p": {
 				"x": 1084,
 				"y": 503,
-				"image": "UI/button.png",
+				"image": "ui/button.png",
 				"onClick": "game.showScene`main",
 				"sndClick": "click",
 				"sndOver": "over"

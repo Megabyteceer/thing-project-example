@@ -526,7 +526,7 @@
 			"p": {
 				"x": 177,
 				"y": 471,
-				"image": "UI/button.png",
+				"image": "ui/button.png",
 				"onClick": "game.showScene`levels/3",
 				"sndClick": "click",
 				"sndOver": "over"
@@ -597,7 +597,7 @@
 					"p": {
 						"x": -107,
 						"y": -7,
-						"image": "UI/button.png",
+						"image": "ui/button.png",
 						"onClick": "this.parent.parent.#bunny.setGravity`3",
 						"sndClick": "click",
 						"sndOver": "over"
@@ -621,7 +621,7 @@
 					"p": {
 						"x": 150,
 						"y": -7,
-						"image": "UI/button.png",
+						"image": "ui/button.png",
 						"onClick": "this.parent.parent.#bunny.setGravity`1",
 						"sndClick": "click",
 						"sndOver": "over"
