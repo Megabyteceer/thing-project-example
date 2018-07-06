@@ -157,9 +157,9 @@
 				"x": -139,
 				"y": -19,
 				"rotation": 1.571,
+				"interactive": true,
 				"dataPath": "game.Sound.musicVol",
-				"refreshInterval": 1,
-				"isScrollable": true
+				"refreshInterval": 1
 			},
 			":": [
 				{
@@ -326,10 +326,10 @@
 				"x": -139,
 				"y": 185,
 				"rotation": 1.571,
+				"interactive": true,
 				"dataPath": "game.Sound.soundsVol",
 				"refreshInterval": 1,
-				"onChanged": "game.Sound.play`click",
-				"isScrollable": true
+				"onChanged": "game.Sound.play`click"
 			},
 			":": [
 				{
@@ -369,7 +369,7 @@
 		{
 			"c": "OrientationTrigger",
 			"p": {
-				"landscapeX": 595,
+				"landscapeX": 599,
 				"landscapeY": -322,
 				"portraitX": 163,
 				"portraitY": -322
