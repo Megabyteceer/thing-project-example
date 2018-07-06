@@ -475,7 +475,6 @@ Lib._setClasses(classes,
   "pivot.y": 0
  },
  "Scene": {
-  "isScrollable": false,
   "isStatic": false,
   "isNoStackable": false,
   "backgroundColor": 16777215,
@@ -496,7 +495,6 @@ Lib._setClasses(classes,
   "pivot.y": 0
  },
  "Gameplay": {
-  "isScrollable": false,
   "isStatic": false,
   "isNoStackable": false,
   "backgroundColor": 16777215,
@@ -517,7 +515,6 @@ Lib._setClasses(classes,
   "pivot.y": 0
  },
  "MainMenu": {
-  "isScrollable": false,
   "isStatic": false,
   "isNoStackable": false,
   "backgroundColor": 16777215,

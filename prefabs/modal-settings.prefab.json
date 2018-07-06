@@ -329,7 +329,7 @@
 				"interactive": true,
 				"dataPath": "game.Sound.soundsVol",
 				"refreshInterval": 1,
-				"onChanged": "game.Sound.play`click"
+				"afterSlide": "game.Sound.play`click"
 			},
 			":": [
 				{

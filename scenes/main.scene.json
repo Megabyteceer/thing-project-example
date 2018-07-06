@@ -17,13 +17,17 @@
 			},
 			":": [
 				{
-					"c": "DSprite",
+					"c": "Shape",
 					"p": {
-						"y": 56,
-						"scale.x": 48,
-						"scale.y": 12,
-						"image": "WHITE",
-						"tint": 0
+						"x": -260,
+						"y": -10,
+						"shape": 1,
+						"shapeWidth": 518,
+						"shapeHeight": 137,
+						"shapeRadius": 14,
+						"lWidth": 4,
+						"lAlpha": 0.48999999999999966,
+						"lAlignment": 1
 					}
 				},
 				{

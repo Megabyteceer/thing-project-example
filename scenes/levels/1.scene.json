@@ -2,7 +2,6 @@
 	"c": "Gameplay",
 	"p": {
 		"name": "levels/1",
-		"isScrollable": true,
 		"backgroundColor": 658955,
 		"faderType": "fader/curtains"
 	},

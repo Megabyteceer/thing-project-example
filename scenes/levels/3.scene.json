@@ -2,7 +2,6 @@
 	"c": "Scene",
 	"p": {
 		"name": "levels/3",
-		"isScrollable": true,
 		"backgroundColor": 0,
 		"faderType": "fader/curtains"
 	},
