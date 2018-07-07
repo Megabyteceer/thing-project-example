@@ -8,6 +8,24 @@
 	},
 	":": [
 		{
+			"c": "Fill",
+			"p": {
+				"alpha": 0.30000000000000004,
+				"scale.x": 5,
+				"scale.y": 2.81,
+				"image": "map/map1.png",
+				"xRepeat": 5,
+				"yRepeat": 2.8100000000000005,
+				"yShift": 0.23200000000000007,
+				"xShiftSpeed": 0.0022200000000000006,
+				"yShiftSpeed": 0.0044900000000000035,
+				"xWaveAmp": 0.040999999999999925,
+				"xWaveSpeed": 0.029500000000000005,
+				"yWaveAmp": 0.060000000000000026,
+				"yWaveSpeed": 0.011099999999999999
+			}
+		},
+		{
 			"c": "OrientationTrigger",
 			"p": {
 				"landscapeX": 640,
