@@ -26,8 +26,7 @@
 						"shapeHeight": 137,
 						"shapeRadius": 14,
 						"lWidth": 4,
-						"lAlpha": 0.48999999999999966,
-						"lAlignment": 1
+						"lAlpha": 0.48999999999999966
 					}
 				},
 				{
@@ -178,6 +177,55 @@
 				"sndClick": "click",
 				"sndOver": "over"
 			}
+		},
+		{
+			"c": "Trigger",
+			"p": {
+				"x": 729,
+				"y": 331,
+				"alphaShift": -0.5699999999999997
+			},
+			":": [
+				{
+					"c": "Button",
+					"p": {
+						"image": "ui/button.png",
+						"sndClick": "click",
+						"sndOver": "over"
+					}
+				}
+			]
+		},
+		{
+			"c": "Mask",
+			"p": {
+				"x": 227,
+				"y": 435
+			},
+			":": [
+				{
+					"c": "Button",
+					"p": {
+						"image": "ui/button.png",
+						"hoverImage": "ui/button.png",
+						"pressImage": "ui/button.png",
+						"disabledImage": "ui/button.png",
+						"sndClick": "click",
+						"sndOver": "over"
+					}
+				},
+				{
+					"c": "Shape",
+					"p": {
+						"name": "mask",
+						"x": 5,
+						"alpha": 0.5000000000000001,
+						"shape": 3,
+						"shapeWidth": 105,
+						"shapeHeight": 25
+					}
+				}
+			]
 		}
 	]
 }
