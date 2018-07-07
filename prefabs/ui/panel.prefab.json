@@ -1,29 +1,55 @@
 {
 	"c": "Container",
 	"p": {
-		"name": "ui/panel",
-		"x": 640,
-		"y": 360
+		"name": "ui/panel"
 	},
 	":": [
 		{
-			"c": "Button",
+			"c": "Label",
 			"p": {
-				"x": 1247,
-				"y": 39,
-				"image": "bunny.png",
-				"onClick": "game.closeCurrentScene",
-				"sndClick": "click",
-				"sndOver": "over"
+				"x": 45,
+				"y": 693,
+				"dataPath": "game.currentScene.localPlayer.currentHp"
 			}
 		},
 		{
-			"c": "Label",
+			"c": "OrientationTrigger",
 			"p": {
-				"x": 38,
-				"y": 681,
-				"dataPath": "game.currentScene.localPlayer.currentHp"
-			}
+				"landscapeX": 1244,
+				"landscapeY": 49,
+				"portraitX": 357,
+				"portraitY": 47
+			},
+			":": [
+				{
+					"c": "Button",
+					"p": {
+						"tint": 14417920,
+						"onClick": "game.closeCurrentScene",
+						"sndClick": "click",
+						"sndOver": "over"
+					},
+					":": [
+						{
+							"c": "DSprite",
+							"p": {
+								"scale.x": 5,
+								"scale.y": 5,
+								"image": "WHITE",
+								"tint": 16711680
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"pivot.y": 19,
+								"text": "X",
+								"style.fontSize": 37
+							}
+						}
+					]
+				}
+			]
 		}
 	]
 }

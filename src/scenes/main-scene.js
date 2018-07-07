@@ -1,14 +1,27 @@
+/*
+*	minimal scene with basic engine methods
+*/
 import Scene from "/thing-engine/js/components/scene.js";
 
 export default class MainMenu extends Scene {
 	
-	onShow() {
+	init() { //called by engine after scene created
+		super.init();
 	}
-	
-	update() {
-		MainMenu.count = 0;
+
+	onShow() { //called after scene added to screen
+
+	}
+
+	update() { //called 60 frames per second
 		super.update();
 	}
-}
 
-MainMenu.count = 0;
+	onHide() { //called before scene 
+
+	}
+
+	onRemove() { //called by engine before scene will be destroyed
+		super.onRemove();
+	}
+}

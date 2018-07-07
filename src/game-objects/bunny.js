@@ -1,3 +1,8 @@
+/*
+* Example of custom game object with an editable property.
+* Can be added on scene in editor. You can find it in Classes List Window
+*/
+
 import MainMenu from "../scenes/main-scene.js";
 import DSprite from "/thing-engine/js/components/d-sprite.js";
 import game from "/thing-engine/js/game.js";
@@ -6,18 +11,19 @@ export default class Bunny extends DSprite {
 	
 	init() {
 		super.init();
-		this.gravity = 1;
+	}
+
+	onRemove() {
+		super.onRemove();
 	}
 	
 	update() {
 		MainMenu.count++;
 		this.vertexData[2] += Math.random();
 		if (this.y > game.H - 25) {
-			this.onTouchBounds();
 			this.ySpeed = -Math.abs(this.ySpeed);
 		} else if(this.y < 0) {
 			this.y = 0;
-			this.onTouchBounds();
 			this.ySpeed *= -1;
 		} else {
 			this.ySpeed += this.gravity;
@@ -27,13 +33,11 @@ export default class Bunny extends DSprite {
 		
 		if (this.x < 0) {
 			this.x = 0;
-			this.onTouchBounds();
 			this.xSpeed *= -1.0;
 		}
 		
 		if (this.x > game.W) {
 			this.x = game.W;
-			this.onTouchBounds();
 			this.xSpeed *= -1.0;
 		}
 		
@@ -41,24 +45,27 @@ export default class Bunny extends DSprite {
 		super.update();
 	}
 	
-	setGravity(v) {
-		this.gravity = v;
-	}
-	
-	static get globalBunnysCount () {
-		return 3;
-	}
-	
-	onTouchBounds() {
-		this.rotation = (Math.random() - 0.5) * 0.2;
+	setTransparency(v) { //custom method used as Button's callback exanple in "levels/2" scene
+		this.alpha = v;
 	}
 }
 
-Bunny.getRandom = function() {
-	return Math.random() * 300;
-};
+
+
+
+
+// Editor's metadata used for reresent object and edit it's properties. 
+// Look thing-engine components folder to find additional examples of meta-data
 
 /// #if EDITOR
-Bunny.__EDITOR_group = "Custom/Bunnies";
+Bunny.__EDITOR_group = "Custom/Bunnies"; //group in Classes List Window for more comfort
 
+__EDITOReditableProps(Bunny, [ //list of editable properties
+	{
+		name:'gravity',
+		type:Number,
+		default: 1,
+		step: 0.01
+	}
+]);
 /// #endif

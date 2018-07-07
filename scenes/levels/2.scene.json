@@ -598,7 +598,7 @@
 						"x": -107,
 						"y": -7,
 						"image": "ui/button.png",
-						"onClick": "this.parent.parent.#bunny.setGravity`3",
+						"onClick": "this.parent.parent.#bunny.setTransparency`0.5",
 						"sndClick": "click",
 						"sndOver": "over"
 					},
@@ -607,7 +607,7 @@
 							"c": "Text",
 							"p": {
 								"y": -24,
-								"text": "Gravity x 3",
+								"text": "Alpha 0.5",
 								"style.fontSize": 37,
 								"style.fill": "#fff",
 								"style.stroke": "#040",
@@ -622,7 +622,7 @@
 						"x": 150,
 						"y": -7,
 						"image": "ui/button.png",
-						"onClick": "this.parent.parent.#bunny.setGravity`1",
+						"onClick": "this.parent.parent.#bunny.setTransparency`1",
 						"sndClick": "click",
 						"sndOver": "over"
 					},
@@ -631,7 +631,7 @@
 							"c": "Text",
 							"p": {
 								"y": -24,
-								"text": "Gravity x 1",
+								"text": "Alpha 1",
 								"style.fontSize": 37,
 								"style.fill": "#fff",
 								"style.stroke": "#040",
@@ -655,11 +655,30 @@
 				{
 					"c": "Button",
 					"p": {
-						"image": "bunny.png",
+						"tint": 14417920,
 						"onClick": "game.closeCurrentScene",
 						"sndClick": "click",
 						"sndOver": "over"
-					}
+					},
+					":": [
+						{
+							"c": "DSprite",
+							"p": {
+								"scale.x": 5,
+								"scale.y": 5,
+								"image": "WHITE",
+								"tint": 16711680
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"pivot.y": 19,
+								"text": "X",
+								"style.fontSize": 37
+							}
+						}
+					]
 				}
 			]
 		}

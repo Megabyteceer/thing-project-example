@@ -1,3 +1,8 @@
+/*
+*  scene with tilemap and camera
+*
+*/
+
 import Scene from "/thing-engine/js/components/scene.js";
 import TilemapProcessor from "../utils/tilemap-processor.js"; // eslint-disable-line no-unused-vars
 import game from "/thing-engine/js/game.js";
@@ -33,6 +38,11 @@ export default class Gameplay extends Scene {
 	}
 	
 	update() {
+		this.updateCamera();
+		super.update();
+	}
+
+	updateCamera() {
 
 		if(this.localPlayer) {
 			let cx = game.W / 2 - this.localPlayer.x;
@@ -52,14 +62,6 @@ export default class Gameplay extends Scene {
 
 			this.layer.x = cx;
 			this.layer.y = cy;
-
-			this.layer.xSpeed += (cx - this.layer.x) * 0.02;
-			this.layer.ySpeed += (cy - this.layer.y) * 0.02;
-			this.layer.xSpeed *= 0.85;
-			this.layer.ySpeed *= 0.85;
-
-		
 		}
-		super.update();
 	}
 }

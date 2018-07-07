@@ -239,11 +239,30 @@
 				{
 					"c": "Button",
 					"p": {
-						"image": "bunny.png",
+						"tint": 14417920,
 						"onClick": "game.closeCurrentScene",
 						"sndClick": "click",
 						"sndOver": "over"
-					}
+					},
+					":": [
+						{
+							"c": "DSprite",
+							"p": {
+								"scale.x": 5,
+								"scale.y": 5,
+								"image": "WHITE",
+								"tint": 16711680
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"pivot.y": 19,
+								"text": "X",
+								"style.fontSize": 37
+							}
+						}
+					]
 				}
 			]
 		}
