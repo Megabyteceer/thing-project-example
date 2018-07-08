@@ -7,8 +7,10 @@
 		{
 			"c": "Label",
 			"p": {
-				"x": 45,
-				"y": 693,
+				"x": 32,
+				"y": 695,
+				"text": "player hp",
+				"style.align": "left",
 				"dataPath": "game.currentScene.localPlayer.currentHp"
 			}
 		},

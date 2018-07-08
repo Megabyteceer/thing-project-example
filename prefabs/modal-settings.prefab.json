@@ -272,6 +272,7 @@
 							"c": "Button",
 							"p": {
 								"onClick": "this.parent.parent.#text-input.decrease",
+								"sndClick": "click",
 								"sndOver": "over",
 								"repeatDelay": 20,
 								"repeatInterval": 8
@@ -301,6 +302,7 @@
 							"c": "Button",
 							"p": {
 								"onClick": "this.parent.parent.#text-input.increase",
+								"sndClick": "click",
 								"sndOver": "over",
 								"repeatDelay": 20,
 								"repeatInterval": 8
