@@ -4,5 +4,8 @@
 	"icon": "img/bunny.png",
 	"lastSceneName": "main",
 	"screenOrientation": "auto",
-	"defaultFont": "Arial"
+	"defaultFont": "Arial",
+	"soundFormats": [
+		"webm", "mp3"
+	]
 }
