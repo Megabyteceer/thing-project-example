@@ -9,7 +9,7 @@ import game from "/thing-engine/js/game.js";
 
 const CAMERA_BORDER = -110;
 
-export default class Gameplay extends Scene {
+class Gameplay extends Scene {
 	init() {
 		super.init();
 
@@ -65,3 +65,5 @@ export default class Gameplay extends Scene {
 		}
 	}
 }
+
+export default Gameplay;

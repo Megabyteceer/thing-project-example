@@ -2,7 +2,7 @@ import DSprite from "/thing-engine/js/components/d-sprite.js";
 import Gameplay from "../scenes/gameplay.js"; // eslint-disable-line no-unused-vars
 import Scene from "/thing-engine/js/components/scene.js";
 
-export default class Unit extends DSprite {
+class Unit extends DSprite {
 
 	init() {
 		super.init();
@@ -61,6 +61,9 @@ export default class Unit extends DSprite {
 		super.onRemove();
 	}
 }
+
+export default Unit;
+
 /// #if EDITOR
 __EDITOReditableProps(Unit, [
 	{

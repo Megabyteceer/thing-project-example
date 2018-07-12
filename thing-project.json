@@ -2,10 +2,12 @@
 	"title": "thing-game-1",
 	"id": "thing-project-example.pixel-cave.com",
 	"icon": "img/bunny.png",
-	"lastSceneName": "main",
+	"lastSceneName": "levels/2",
 	"screenOrientation": "auto",
 	"defaultFont": "Arial",
 	"soundFormats": [
-		"mp3", "webm", "ogg"
+		"mp3",
+		"webm",
+		"ogg"
 	]
 }

@@ -3,7 +3,7 @@
 */
 import Scene from "/thing-engine/js/components/scene.js";
 
-export default class MainMenu extends Scene {
+class MainMenu extends Scene {
 	
 	init() { //called by engine after scene created
 		super.init();
@@ -25,3 +25,5 @@ export default class MainMenu extends Scene {
 		super.onRemove();
 	}
 }
+
+export default MainMenu;

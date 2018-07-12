@@ -1,6 +1,6 @@
 import Lib from "/thing-engine/js/lib.js";
 
-export default class PerspectiveSprite extends PIXI.mesh.Plane {
+class PerspectiveSprite extends PIXI.mesh.Plane {
 	
 	constructor() {
 		super(Lib.getTexture('WHITE'), 2 , 2);
@@ -63,6 +63,7 @@ export default class PerspectiveSprite extends PIXI.mesh.Plane {
 	}
 }
 
+export default PerspectiveSprite;
 
 /// #if EDITOR
 

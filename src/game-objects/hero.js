@@ -4,7 +4,7 @@ import {
 	stepTo
 } from "/thing-engine/js/utils/utils.js";
 
-export default class Hero extends Unit {
+class Hero extends Unit {
 
 	init() {
 		super.init();
@@ -49,3 +49,5 @@ export default class Hero extends Unit {
 		}
 	}
 }
+
+export default Hero;

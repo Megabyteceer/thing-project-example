@@ -7,7 +7,7 @@ import MainMenu from "../scenes/main-scene.js";
 import DSprite from "/thing-engine/js/components/d-sprite.js";
 import game from "/thing-engine/js/game.js";
 
-export default class Bunny extends DSprite {
+class Bunny extends DSprite {
 	
 	init() {
 		super.init();
@@ -50,9 +50,7 @@ export default class Bunny extends DSprite {
 	}
 }
 
-
-
-
+export default Bunny;
 
 // Editor's metadata used for reresent object and edit it's properties. 
 // Look thing-engine components folder to find additional examples of meta-data
