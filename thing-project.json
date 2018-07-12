@@ -6,6 +6,6 @@
 	"screenOrientation": "auto",
 	"defaultFont": "Arial",
 	"soundFormats": [
-		"webm", "mp3"
+		"mp3", "webm", "ogg"
 	]
 }
