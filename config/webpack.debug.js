@@ -1,19 +1,22 @@
 /*global module */
 /*global require */
 /*global __dirname */
+
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 const webpack = require('webpack');
 const path = require('path');
 
+const mode = 'development';
+
 module.exports = merge(common, {
-	mode: 'development',
+	mode: mode,
 	output: {
 		path: path.resolve(__dirname, '../debug')
 	},
 	plugins: [
 		new webpack.DefinePlugin({
-			'process.env.NODE_ENV': JSON.stringify('development')
+			'process.env.NODE_ENV': JSON.stringify(mode)
 		})
 	]
 });
