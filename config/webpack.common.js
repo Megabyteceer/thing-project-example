@@ -17,7 +17,7 @@ if(!fs.existsSync(pixiDistPath)) {
 }
 
 module.exports = merge(common, {
-	entry: ['./src/index.js'],
+	entry: ["babel-polyfill", './src/index.js'],
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, '../release')
