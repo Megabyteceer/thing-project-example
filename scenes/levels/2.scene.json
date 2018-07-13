@@ -579,7 +579,19 @@
 				"image": "bunny.png",
 				"tint": 16735781,
 				"xSpeed": 6
-			}
+			},
+			":": [
+				{
+					"c": "Spawner",
+					"p": {
+						"x": -12,
+						"y": 7,
+						"rotation": 2.722999999999999,
+						"prefabToSpawn": "particle",
+						"speed": 4
+					}
+				}
+			]
 		},
 		{
 			"c": "OrientationTrigger",

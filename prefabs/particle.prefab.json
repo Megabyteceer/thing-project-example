@@ -1,0 +1,9 @@
+{
+	"c": "Particle",
+	"p": {
+		"name": "particle",
+		"x": 640,
+		"y": 360,
+		"image": "WHITE"
+	}
+}
