@@ -42,3 +42,6 @@ snd/sounds.json
 **/*.mp3
 **/*.webm
 **/*.ogg
+
+src/classes.js
+assets.js
