@@ -38,7 +38,7 @@ public/css/lib
 
 
 snd/snd-convert-cache.json
-snd/sounds.json
+
 **/*.mp3
 **/*.webm
 **/*.ogg
