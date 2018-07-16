@@ -1,7 +1,6 @@
 {
 	"c": "MainMenu",
 	"p": {
-		"name": "main",
 		"backgroundColor": 2823437,
 		"musicIntro": "mus/title_i",
 		"musicLoop": "mus/title"

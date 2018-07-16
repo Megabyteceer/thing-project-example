@@ -1,7 +1,6 @@
 {
 	"c": "Scene",
 	"p": {
-		"name": "levels/2",
 		"backgroundColor": 1705536,
 		"faderType": "fader/default"
 	},
@@ -574,8 +573,8 @@
 		{
 			"c": "Bunny",
 			"p": {
-				"x": 179,
-				"y": 187,
+				"x": 154,
+				"y": 164,
 				"image": "bunny.png",
 				"tint": 16735781,
 				"xSpeed": 6

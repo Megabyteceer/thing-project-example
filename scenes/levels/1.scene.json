@@ -1,7 +1,6 @@
 {
 	"c": "Gameplay",
 	"p": {
-		"name": "levels/1",
 		"backgroundColor": 658955,
 		"faderType": "fader/curtains"
 	},
