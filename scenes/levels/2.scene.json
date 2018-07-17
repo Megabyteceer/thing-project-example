@@ -573,8 +573,8 @@
 		{
 			"c": "Bunny",
 			"p": {
-				"x": 154,
-				"y": 164,
+				"x": 153,
+				"y": 180,
 				"image": "bunny.png",
 				"tint": 16735781,
 				"xSpeed": 6
@@ -692,6 +692,78 @@
 					]
 				}
 			]
+		},
+		{
+			"c": "Trigger",
+			"p": {
+				"name": "hide-by-click-outside",
+				"x": 661,
+				"y": 156,
+				"pow": 0.14,
+				"damp": 0.6579999999999998,
+				"scaleShift": -0.8799999999999999
+			},
+			":": [
+				{
+					"c": "ClickOutsideTrigger",
+					"p": {
+						"onClickOutside": "this.parent.hide"
+					},
+					":": [
+						{
+							"c": "Sprite",
+							"p": {
+								"x": -328,
+								"y": -70,
+								"interactive": true,
+								"scale.x": 34.897,
+								"scale.y": 21.091999999999995,
+								"image": "WHITE",
+								"tint": 0
+							}
+						},
+						{
+							"c": "DSprite",
+							"p": {
+								"x": -262,
+								"y": -6,
+								"interactive": true,
+								"image": "bunny.png"
+							}
+						},
+						{
+							"c": "Button",
+							"p": {
+								"x": -150,
+								"y": 74,
+								"image": "ui/button.png",
+								"sndClick": "click",
+								"sndOver": "over"
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"x": -120,
+								"y": -17,
+								"text": "Click outside to hide",
+								"style.fontSize": 21
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"c": "Button",
+			"p": {
+				"x": 795,
+				"y": 157,
+				"image": "ui/button.png",
+				"onClick": "all.hide-by-click-outside.show",
+				"sndClick": "click",
+				"sndOver": "over"
+			}
 		}
 	]
 }
