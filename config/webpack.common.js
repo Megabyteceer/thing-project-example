@@ -21,11 +21,9 @@ let howlerPath;
 
 if(process.argv.indexOf('debug') >= 0) { //debug build
 	pixiDistPath = path.resolve(modulesFolder, 'pixi.js/dist/pixi.js');
-	pixiTilemapDistPath = path.resolve(modulesFolder, 'pixi-tilemap/bin/pixi-tilemap.js');
 	howlerPath = path.resolve(modulesFolder, 'howler/dist/howler.js');
 } else {
 	pixiDistPath = path.resolve(modulesFolder, 'pixi.js/dist/pixi.min.js');
-	pixiTilemapDistPath = path.resolve(modulesFolder, 'pixi-tilemap/bin/pixi-tilemap.js');
 	howlerPath = path.resolve(modulesFolder, 'howler/dist/howler.core.min.js');
 }
 
@@ -39,8 +37,7 @@ module.exports = merge(common, {
 		new CopyWebpackPlugin([
 			'index.html',
 			{ from:howlerPath, to: 'howler.core.js' },
-			{ from:pixiDistPath, to: 'pixi.js' },
-			{ from:pixiTilemapDistPath, to: 'pixi-tilemap.js' }
+			{ from:pixiDistPath, to: 'pixi.js' }
 		])
 	],
 	resolve: {

@@ -11,6 +11,7 @@ const mode = 'development';
 
 module.exports = merge(common, {
 	mode: mode,
+	devtool: 'inline-source-map',
 	output: {
 		path: path.resolve(__dirname, '../debug')
 	},
