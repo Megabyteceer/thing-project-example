@@ -406,6 +406,17 @@
 					]
 				}
 			]
+		},
+		{
+			"c": "Button",
+			"p": {
+				"x": -293,
+				"y": 1,
+				"image": "ui/button.png",
+				"onClick": "game.Sound.toggleFullSound",
+				"sndClick": "click",
+				"sndOver": "over"
+			}
 		}
 	]
 }
