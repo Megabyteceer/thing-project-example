@@ -26,12 +26,6 @@ class Unit extends DSprite {
 	}
 
 	wallsExtrude() {
-		/// #if EDITOR
-		/*if (!this._tile && this.HP > 0) {
-			assert(false, 'Alive Unit with no tile detected. ' + this.constructor.name + '; x:' + this.x + '; y:' + this.y + '; hp: ' + this.HP + '; isLocal=' + (this === this.scene.localPlayer));
-		}*/
-		/// #endif
-
 		if (this.isWallThere(-this.radius, 0)) {
 			this.x++;
 			if (this.xSpeed < 0) {
