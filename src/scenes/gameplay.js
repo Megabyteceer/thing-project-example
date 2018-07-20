@@ -22,10 +22,6 @@ class Gameplay extends Scene {
 		this.layer = this.all['layer'];
 	}
 
-	initUnitsGrid() {
-		this.unitsGrid = [];
-	}
-
 	isFloorThere(x, y) {
 		return this.map[Math.floor(x/100) + Math.floor(y/100) * this.W] < 2;
 	}

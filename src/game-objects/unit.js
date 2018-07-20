@@ -8,8 +8,6 @@ class Unit extends DSprite {
 		super.init();
 		/**@type {Gameplay} */
 		this.scene = this.findParentByType(Scene);
-		this.unitsGrid = this.scene.unitsGrid;
-		this.currentHp = this.HP;
 	}
 
 	update() {
@@ -49,10 +47,6 @@ class Unit extends DSprite {
 				this.ySpeed = 0;
 			}
 		}
-	}
-
-	onRemove() {
-		super.onRemove();
 	}
 }
 
