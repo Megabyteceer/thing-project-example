@@ -244,6 +244,30 @@
 					}
 				}
 			]
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"x": 495,
+				"y": 406,
+				"prefabName": "bunny-double"
+			}
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"x": 728,
+				"y": 489,
+				"prefabName": "bunny-double"
+			},
+			":": [
+				{
+					"c": "Text",
+					"p": {
+						"text": "prefab with custom child"
+					}
+				}
+			]
 		}
 	]
 }
