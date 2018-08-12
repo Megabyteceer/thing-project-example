@@ -4,6 +4,8 @@
 	"icon": "img/bunny.png",
 	"lastSceneName": "main",
 	"screenOrientation": "auto",
+	"dynamicStageSize": false,
+	"preventUpscale": false,
 	"defaultFont": "Arial",
 	"soundFormats": [
 		"mp3",
