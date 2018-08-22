@@ -78,14 +78,6 @@
 			]
 		},
 		{
-			"c": "NineSlicePlane",
-			"p": {
-				"x": 127,
-				"y": 153,
-				"image": "ui/button.png"
-			}
-		},
-		{
 			"c": "OrientationTrigger",
 			"p": {
 				"landscapeX": 1131,
@@ -217,8 +209,8 @@
 		{
 			"c": "Mask",
 			"p": {
-				"x": 227,
-				"y": 435
+				"x": 232,
+				"y": 671
 			},
 			":": [
 				{

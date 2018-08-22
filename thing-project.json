@@ -4,12 +4,15 @@
 	"icon": "img/bunny.png",
 	"lastSceneName": "main",
 	"screenOrientation": "auto",
+	"width": 1280,
+	"height": 720,
+	"portraitWidth": 408,
+	"portraitHeight": 720,
 	"dynamicStageSize": false,
 	"preventUpscale": false,
 	"defaultFont": "Arial",
 	"soundFormats": [
-		"mp3",
-		"webm",
-		"ogg"
+		"ogg",
+		"aac"
 	]
 }
