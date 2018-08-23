@@ -14,5 +14,6 @@
 	"soundFormats": [
 		"ogg",
 		"aac"
-	]
+	],
+	"renderResolution": 1
 }
