@@ -10,10 +10,17 @@
 	"portraitHeight": 720,
 	"dynamicStageSize": false,
 	"preventUpscale": false,
-	"defaultFont": "Arial",
+	"defaultFont": "Roboto, Arial",
 	"soundFormats": [
 		"ogg",
 		"aac"
 	],
-	"renderResolution": 1
+	"renderResolution": 1,
+	"webfontloader": {
+		"google": {
+			"families": [
+				"Roboto:400,700:cyrillic"
+			]
+		}
+	}
 }

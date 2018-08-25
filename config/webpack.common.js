@@ -1,4 +1,5 @@
 /*global module */
+/*global process */
 /*global require */
 /*global __dirname */
 const merge = require('webpack-merge');
@@ -16,7 +17,6 @@ if(fs.existsSync(path.resolve(__dirname, '../node_modules/pixi.js/dist/pixi.min.
 }
 
 let pixiDistPath;
-let pixiTilemapDistPath;
 let howlerPath;
 
 if(process.argv.indexOf('debug') >= 0) { //debug build
@@ -28,7 +28,7 @@ if(process.argv.indexOf('debug') >= 0) { //debug build
 }
 
 module.exports = merge(common, {
-	entry: ["babel-polyfill", './src/index.js'],
+	entry: ["babel-polyfill", 'webfontloader', './src/index.js'],
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, '../release')
