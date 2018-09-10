@@ -22,5 +22,9 @@
 				"Roboto:400,700:cyrillic"
 			]
 		}
+	},
+	"loadOnDemandSounds": {
+		"click": 1,
+		"over": 1
 	}
 }
