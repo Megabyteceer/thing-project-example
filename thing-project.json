@@ -2,7 +2,7 @@
 	"title": "thing-game-1",
 	"id": "thing-project-example.pixel-cave.com",
 	"icon": "img/bunny.png",
-	"lastSceneName": "main",
+	"lastSceneName": "levels/1",
 	"screenOrientation": "auto",
 	"width": 1280,
 	"height": 720,
@@ -24,7 +24,7 @@
 		}
 	},
 	"loadOnDemandSounds": {
-		"click": 1,
-		"over": 1
+		"mus/title_i": 1,
+		"mus/title": 1
 	}
 }
