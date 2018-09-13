@@ -1,9 +1,7 @@
 {
 	"c": "MainMenu",
 	"p": {
-		"backgroundColor": 2823437,
-		"musicIntro": "mus/title_i",
-		"musicLoop": "mus/title"
+		"backgroundColor": 2823437
 	},
 	":": [
 		{
@@ -156,8 +154,8 @@
 		{
 			"c": "Bunny",
 			"p": {
-				"x": 236,
-				"y": 260,
+				"x": 198,
+				"y": 545,
 				"image": "bunny.png"
 			}
 		},
@@ -260,6 +258,14 @@
 					}
 				}
 			]
+		},
+		{
+			"c": "BgMusic",
+			"p": {
+				"intro": "mus/title_i",
+				"loop": "mus/title"
+			}
 		}
-	]
+	],
+	"_isModified": true
 }
