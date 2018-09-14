@@ -26,7 +26,7 @@
 	"loadOnDemandSounds": {
 		"mus/title_i": 1,
 		"mus/title": 1,
-		"mus/gs3_title": 1,
-		"mus/shop": 1
-	}
+		"mus/gs3_title": 1
+	},
+	"muteOnFocusLost": true
 }

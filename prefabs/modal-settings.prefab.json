@@ -191,6 +191,13 @@
 				"sndClick": "click",
 				"sndOver": "over"
 			}
+		},
+		{
+			"c": "BgMusic",
+			"p": {
+				"loop": "mus/shop",
+				"fade": 2.1
+			}
 		}
 	],
 	"_isModified": true
