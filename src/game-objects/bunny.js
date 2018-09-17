@@ -19,7 +19,6 @@ class Bunny extends DSprite {
 	
 	update() {
 		MainMenu.count++;
-		this.vertexData[2] += Math.random();
 		if (this.y > game.H - 25) {
 			this.ySpeed = -Math.abs(this.ySpeed);
 		} else if(this.y < 0) {
@@ -28,9 +27,7 @@ class Bunny extends DSprite {
 		} else {
 			this.ySpeed += this.gravity;
 		}
-		
-		game.settings.setItem('data1', true);
-		
+
 		if (this.x < 0) {
 			this.x = 0;
 			this.xSpeed *= -1.0;
