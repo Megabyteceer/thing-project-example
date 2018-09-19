@@ -196,7 +196,7 @@
 			"c": "BgMusic",
 			"p": {
 				"loop": "mus/shop",
-				"fade": 2.1
+				"fade": 0.5
 			}
 		}
 	],
