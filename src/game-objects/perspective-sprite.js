@@ -1,4 +1,4 @@
-import Lib from "/thing-engine/js/lib.js";
+import Lib from "thing-engine/js/lib.js";
 
 class PerspectiveSprite extends PIXI.mesh.Plane {
 	

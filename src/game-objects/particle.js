@@ -1,4 +1,4 @@
-import DSprite from "/thing-engine/js/components/d-sprite.js";
+import DSprite from "thing-engine/js/components/d-sprite.js";
 
 export default class Particle extends DSprite {
 

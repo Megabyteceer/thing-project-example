@@ -4,8 +4,8 @@
 */
 
 import MainMenu from "../scenes/main-scene.js";
-import DSprite from "/thing-engine/js/components/d-sprite.js";
-import game from "/thing-engine/js/game.js";
+import DSprite from "thing-engine/js/components/d-sprite.js";
+import game from "thing-engine/js/game.js";
 
 class Bunny extends DSprite {
 	
