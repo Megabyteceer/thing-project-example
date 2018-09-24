@@ -42,6 +42,7 @@ snd/snd-convert-cache.json
 **/*.mp3
 **/*.webm
 **/*.ogg
+**/*.aac
 
 src/classes.js
 assets.js
