@@ -29,5 +29,6 @@
 		"mus/gs3_title": 1
 	},
 	"muteOnFocusLost": true,
-	"version": "0.0.1"
+	"version": "0.0.1",
+	"framesSkipLimit": 4
 }
