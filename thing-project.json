@@ -23,13 +23,14 @@
 			]
 		}
 	},
+	"fontHolderHTML": "<span style=\"font-family: 'Roboto', Arial;\">ФZ<span style=\"font-weight: bold;color:rgba(0,0,0,0.01);\">ЯS</span></span>",
 	"loadOnDemandSounds": {
 		"mus/title_i": 1,
 		"mus/title": 1,
 		"mus/gs3_title": 1
 	},
 	"muteOnFocusLost": true,
-	"version": "0.0.1",
+	"version": "0.0.9",
 	"framesSkipLimit": 4,
 	"localesPath": "locales",
 	"embedLocales": true
