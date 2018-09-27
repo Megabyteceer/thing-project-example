@@ -26,7 +26,7 @@
 			"p": {
 				"x": 1,
 				"y": -277,
-				"translatableText": "MODAL-TITLE",
+				"translatableText": "modal_title",
 				"style.fontSize": 38
 			}
 		},
@@ -34,7 +34,7 @@
 			"c": "Text",
 			"p": {
 				"y": -152,
-				"translatableText": "SETTINGS/MUSIC_VOLUME",
+				"translatableText": "settings.music_volume",
 				"style.fontSize": 25
 			}
 		},
@@ -90,7 +90,7 @@
 			"p": {
 				"x": -8,
 				"y": 57,
-				"translatableText": "SETTINGS/FX_VOLUME",
+				"translatableText": "settings.fx_volume",
 				"style.fontSize": 25
 			}
 		},

@@ -241,7 +241,7 @@
 				{
 					"c": "Text",
 					"p": {
-						"translatableText": "LOADING",
+						"translatableText": "loading",
 						"style.fontSize": 35
 					}
 				}

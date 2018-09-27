@@ -48,7 +48,7 @@
 				{
 					"c": "Text",
 					"p": {
-						"translatableText": "TITLE",
+						"translatableText": "title",
 						"style.fontSize": 48
 					}
 				}
@@ -124,7 +124,7 @@
 						"style.align": "left",
 						"style.fill": "#acb",
 						"dataPath": "game.currentScene.name",
-						"template": "Current scene's name: %%",
+						"template": "Current scene's name: %d",
 						"decimalsCount": 1
 					}
 				},
@@ -137,7 +137,7 @@
 						"style.align": "left",
 						"style.fill": "#acb",
 						"dataPath": "MainMenu.count",
-						"template": "Current scene's name: %%",
+						"template": "Current scene's name: %d",
 						"decimalsCount": 1
 					}
 				}

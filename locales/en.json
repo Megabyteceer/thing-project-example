@@ -1,0 +1,12 @@
+{
+	"ok": "Ok",
+	"yes": "Yes",
+	"no": "No",
+	"title": "THING-EDITOR\nexample project",
+	"modal_title": "SOUND SETTINGS",
+	"settings": {
+		"music_volume": "Music Volume",
+		"fx_volume": "FX Volume"
+	},
+	"loading": "Loading..."
+}

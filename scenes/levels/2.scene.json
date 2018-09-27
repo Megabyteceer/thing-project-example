@@ -535,7 +535,7 @@
 					"c": "Text",
 					"p": {
 						"y": -22,
-						"translatableText": "YES",
+						"translatableText": "yes",
 						"style.fontSize": 34,
 						"style.stroke": "#472",
 						"style.strokeThickness": 5
@@ -548,7 +548,7 @@
 			"p": {
 				"x": 17,
 				"y": 588,
-				"translatableText": "OK",
+				"translatableText": "ok",
 				"style.fontSize": 16,
 				"style.align": "left",
 				"style.fill": "#acb",
@@ -561,12 +561,12 @@
 			"p": {
 				"x": 17,
 				"y": 618,
-				"text": " X: %%",
+				"text": " X: %d",
 				"style.fontSize": 16,
 				"style.align": "left",
 				"style.fill": "#acb",
 				"dataPath": "all.bunny.x",
-				"template": "X: %%",
+				"template": "X: %d",
 				"isNumeric": true
 			}
 		},
