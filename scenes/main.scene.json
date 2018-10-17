@@ -87,7 +87,7 @@
 				{
 					"c": "Button",
 					"p": {
-						"y": -31,
+						"y": -113,
 						"image": "ui/button.png",
 						"onClick": "game.showScene`levels/1",
 						"sndClick": "click",
@@ -98,9 +98,20 @@
 					"c": "Button",
 					"p": {
 						"x": -1,
-						"y": 53,
+						"y": -29,
 						"image": "ui/button.png",
 						"onClick": "game.showScene`levels/2",
+						"sndClick": "click",
+						"sndOver": "over"
+					}
+				},
+				{
+					"c": "Button",
+					"p": {
+						"x": -1,
+						"y": 50,
+						"image": "ui/button.png",
+						"onClick": "game.showScene`levels/3",
 						"sndClick": "click",
 						"sndOver": "over"
 					}

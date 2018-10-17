@@ -28,7 +28,7 @@ if(process.argv.indexOf('debug') >= 0) { //debug build
 }
 
 module.exports = merge(common, {
-	entry: ["babel-polyfill", 'webfontloader', './src/index.js'],
+	entry: ["babel-polyfill", 'webfontloader', 'pixi-spine/bin/pixi-spine.js', './src/index.js'],
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, '../release')

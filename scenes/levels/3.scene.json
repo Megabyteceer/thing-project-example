@@ -217,6 +217,40 @@
 		{
 			"c": "Text",
 			"p": {
+				"x": 37,
+				"y": 435,
+				"text": "spine test",
+				"style.fontSize": 22,
+				"style.align": "left",
+				"style.fill": "#fff"
+			}
+		},
+		{
+			"c": "Text",
+			"p": {
+				"x": 35,
+				"y": 464,
+				"text": "dragon taken from:",
+				"style.fontSize": 16,
+				"style.align": "left",
+				"style.fill": "#fff"
+			}
+		},
+		{
+			"c": "Text",
+			"p": {
+				"x": 177,
+				"y": 464,
+				"text": "https://pixijs.io/examples/#/spine/dragon.js",
+				"style.fontSize": 16,
+				"style.align": "left",
+				"style.fill": "#ff0",
+				"style.fontWeight": "bold"
+			}
+		},
+		{
+			"c": "Text",
+			"p": {
 				"x": 903,
 				"y": 243,
 				"text": "hgvhgv kj hioJJHYU",
@@ -264,6 +298,18 @@
 					]
 				}
 			]
+		},
+		{
+			"c": "Spine",
+			"p": {
+				"x": 256,
+				"y": 233,
+				"scale.x": 0.5,
+				"scale.y": 0.5,
+				"spineData": "img/dragon/dragon.json",
+				"currentAnimation": "flying"
+			},
+			":": []
 		}
 	]
 }
