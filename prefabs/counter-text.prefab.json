@@ -2,8 +2,8 @@
 	"c": "Text",
 	"p": {
 		"name": "counter-text",
-		"x": 640,
-		"y": 360,
+		"x": 620,
+		"y": 333,
 		"pivot.y": 24,
 		"text": "100",
 		"style.fontSize": 44

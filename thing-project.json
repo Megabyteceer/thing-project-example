@@ -21,17 +21,18 @@
 			"families": [
 				"Roboto:400,700:cyrillic"
 			]
-		}
+		},
+		"timeout": 6000
 	},
 	"fontHolderHTML": "<span style=\"font-family: 'Roboto', Arial;\">ФZ<span style=\"font-weight: bold;color:rgba(0,0,0,0.01);\">ЯS</span></span>",
-	"loadOnDemandSounds": {
-		"mus/title_i": 1,
-		"mus/title": 1,
-		"mus/gs3_title": 1
-	},
+	"loadOnDemandSounds": {},
 	"muteOnFocusLost": true,
 	"version": "0.0.9",
 	"framesSkipLimit": 4,
 	"localesPath": "locales",
-	"embedLocales": true
+	"embedLocales": true,
+	"loadOnDemandTextures": {},
+	"autoFullscreen": false,
+	"autoFullscreenDesktop": false,
+	"autoFullscreenMobile": false
 }

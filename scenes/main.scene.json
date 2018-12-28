@@ -8,6 +8,7 @@
 			"c": "Fill",
 			"p": {
 				"alpha": 0.30000000000000004,
+				"__lockSelection": true,
 				"scale.x": 5,
 				"scale.y": 2.81,
 				"image": "map/map1.png",
@@ -165,24 +166,24 @@
 		{
 			"c": "Bunny",
 			"p": {
-				"x": 198,
-				"y": 545,
+				"x": 237,
+				"y": 583,
 				"image": "bunny.png"
 			}
 		},
 		{
 			"c": "Bunny",
 			"p": {
-				"x": 308,
-				"y": 216,
+				"x": 318,
+				"y": 261,
 				"image": "bunny.png"
 			}
 		},
 		{
 			"c": "Bunny",
 			"p": {
-				"x": 385,
-				"y": 178,
+				"x": 631,
+				"y": 235,
 				"image": "bunny.png"
 			}
 		},

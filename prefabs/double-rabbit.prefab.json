@@ -2,8 +2,8 @@
 	"c": "Bunny",
 	"p": {
 		"name": "double-rabbit",
-		"x": 369,
-		"y": 445,
+		"x": 434,
+		"y": 414,
 		"pivot.y": 30,
 		"image": "bunny.png",
 		"xSpeed": -3
