@@ -2,8 +2,8 @@
 	"c": "Bunny",
 	"p": {
 		"name": "bunny-double",
-		"x": 329,
-		"y": 413,
+		"x": 345,
+		"y": 395,
 		"rotation": -0.6060000000000001,
 		"pivot.y": 30,
 		"image": "bunny.png",

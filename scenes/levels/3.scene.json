@@ -101,34 +101,43 @@
 			}
 		},
 		{
-			"c": "Bunny",
+			"c": "Trigger",
 			"p": {
-				"x": 1006,
-				"y": 155,
-				"pivot.y": 30,
-				"image": "bunny.png",
-				"xSpeed": -3
+				"x": 927,
+				"y": 302
 			},
 			":": [
 				{
-					"c": "DSprite",
+					"c": "Bunny",
 					"p": {
-						"x": 2,
-						"y": -40,
-						"image": "bunny.png"
+						"x": 119,
+						"y": -109,
+						"pivot.y": 30,
+						"image": "bunny.png",
+						"xSpeed": -3
+					},
+					":": [
+						{
+							"c": "DSprite",
+							"p": {
+								"x": 2,
+								"y": -40,
+								"image": "bunny.png"
+							}
+						}
+					]
+				},
+				{
+					"c": "Bunny",
+					"p": {
+						"x": -121,
+						"y": 210,
+						"pivot.y": 31,
+						"image": "bunny.png",
+						"xSpeed": -11.194716823816178
 					}
 				}
 			]
-		},
-		{
-			"c": "Bunny",
-			"p": {
-				"x": 766,
-				"y": 474,
-				"pivot.y": 31,
-				"image": "bunny.png",
-				"xSpeed": -11.194716823816178
-			}
 		},
 		{
 			"c": "DSprite",
@@ -142,8 +151,8 @@
 		{
 			"c": "Bunny",
 			"p": {
-				"x": 432,
-				"y": 434,
+				"x": 481,
+				"y": 350,
 				"rotation": -0.7360000000000001,
 				"image": "bunny.png",
 				"xSpeed": -10.588117464333646
