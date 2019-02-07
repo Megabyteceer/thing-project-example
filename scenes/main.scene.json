@@ -158,14 +158,6 @@
 		{
 			"c": "Bunny",
 			"p": {
-				"x": 302,
-				"y": 213,
-				"image": "bunny.png"
-			}
-		},
-		{
-			"c": "Bunny",
-			"p": {
 				"x": 237,
 				"y": 583,
 				"image": "bunny.png"
@@ -258,15 +250,15 @@
 		{
 			"c": "PrefabReference",
 			"p": {
-				"x": 728,
-				"y": 489,
+				"x": 671,
+				"y": 435,
 				"prefabName": "bunny-double"
 			},
 			":": [
 				{
 					"c": "Text",
 					"p": {
-						"text": "prefab with custom child"
+						"text": "prefab reference with custom child"
 					}
 				}
 			]
