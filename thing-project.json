@@ -35,6 +35,9 @@
 		"ondemand/1.png": 1,
 		"ondemand/2.png": 1
 	},
+	"__loadOnDemandTexturesFolders": {
+		"ondemand": 1
+	},
 	"autoFullscreen": false,
 	"autoFullscreenDesktop": false,
 	"autoFullscreenMobile": false,
