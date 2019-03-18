@@ -49,3 +49,16 @@ class Hero extends Unit {
 }
 
 export default Hero;
+
+/// #if EDITOR
+__EDITOReditableProps(Hero, [{
+	type: 'splitter',
+	title: 'Hero:',
+	name: 'hero'
+},
+{
+	type: 'ref',
+	name: 'scene'
+}
+]);
+/// #endif
