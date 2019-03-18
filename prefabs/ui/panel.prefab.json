@@ -52,6 +52,15 @@
 					]
 				}
 			]
+		},
+		{
+			"c": "MobileJoystick",
+			"p": {
+				"x": 147,
+				"y": 565,
+				"alpha": 0.65,
+				"image": "ui/joystick-move.png"
+			}
 		}
 	]
 }
