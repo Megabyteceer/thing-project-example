@@ -25,7 +25,9 @@
 		"timeout": 6000
 	},
 	"fontHolderHTML": "<span style=\"font-family: 'Roboto', Arial;\">ФZ<span style=\"font-weight: bold;color:rgba(0,0,0,0.01);\">ЯS</span></span>",
-	"loadOnDemandSounds": {},
+	"loadOnDemandSounds": {
+		"mus/gs3_title": 1
+	},
 	"muteOnFocusLost": true,
 	"version": "0.0.9",
 	"framesSkipLimit": 4,
