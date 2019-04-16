@@ -44,5 +44,6 @@
 	"autoFullscreenDesktop": false,
 	"autoFullscreenMobile": false,
 	"soundDefaultBitrate": 96,
-	"soundBitrates": {}
+	"soundBitrates": {},
+	"__proxyFetchesViaNodeServer": false
 }

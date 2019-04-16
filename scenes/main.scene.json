@@ -54,8 +54,8 @@
 						"style.fontSize": 42,
 						"verticalAlign": "center",
 						"style.fill": "#ff0",
-						"style.stroke": "#a00",
 						"style.strokeThickness": 4,
+						"style.stroke": "#a00",
 						"style.fontWeight": "bold",
 						"style.padding": 12,
 						"style.letterSpacing": 2
@@ -378,6 +378,17 @@
 				"y": 172,
 				"image": "ui/button.png",
 				"onClick": "game.showModal`modal-settings",
+				"sndClick": "click",
+				"sndOver": "over"
+			}
+		},
+		{
+			"c": "Button",
+			"p": {
+				"x": 1024,
+				"y": 248,
+				"image": "ui/button.png",
+				"onClick": "TextInput.prompt`Enter you text,18,text here",
 				"sndClick": "click",
 				"sndOver": "over"
 			}

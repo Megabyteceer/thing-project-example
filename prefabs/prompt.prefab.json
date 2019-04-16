@@ -1,0 +1,204 @@
+{
+	"c": "OrientationTrigger",
+	"p": {
+		"name": "prompt",
+		"landscapeX": 640,
+		"landscapeY": 360,
+		"portraitX": 205,
+		"portraitY": 360
+	},
+	":": [
+		{
+			"c": "Sprite",
+			"p": {
+				"name": "backdrop",
+				"x": -640,
+				"y": -360,
+				"alpha": 0.84,
+				"scale.x": 128,
+				"scale.y": 72,
+				"image": "WHITE",
+				"tint": 41
+			}
+		},
+		{
+			"c": "Text",
+			"p": {
+				"name": "title",
+				"x": 1,
+				"y": -277,
+				"text": "Enter text here",
+				"style.fontSize": 38
+			}
+		},
+		{
+			"c": "Text",
+			"p": {
+				"x": 1,
+				"y": -307,
+				"text": "prompt examle",
+				"style.fontSize": 20,
+				"style.fill": "#aaa"
+			}
+		},
+		{
+			"c": "TextInput",
+			"p": {
+				"name": "text-input",
+				"x": -116,
+				"y": -194,
+				"text": "text input",
+				"style.fontSize": 27,
+				"style.align": "left",
+				"verticalAlign": "center",
+				"maxInputLen": 16
+			},
+			":": [
+				{
+					"c": "MovieClip",
+					"p": {
+						"name": "cursor",
+						"alpha": 0,
+						"scale.x": 0.42,
+						"scale.y": 3.16,
+						"pivot.x": -5,
+						"image": "WHITE",
+						"timeline": {
+							"l": {},
+							"p": 0.02,
+							"d": 0.85,
+							"f": [
+								{
+									"n": "alpha",
+									"t": [
+										{
+											"v": 0,
+											"t": 0,
+											"m": 1
+										},
+										{
+											"v": 0,
+											"t": 14,
+											"m": 1
+										},
+										{
+											"v": 1,
+											"t": 23,
+											"m": 1
+										},
+										{
+											"v": 1,
+											"t": 51,
+											"m": 1
+										},
+										{
+											"v": 0,
+											"t": 61,
+											"m": 1,
+											"j": 0
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				{
+					"c": "Button",
+					"p": {
+						"x": 112,
+						"y": 2,
+						"alpha": 0.23,
+						"scale.x": 27.8,
+						"scale.y": 4.32,
+						"image": "WHITE",
+						"hoverImage": "WHITE",
+						"pressImage": "WHITE",
+						"disabledImage": "WHITE",
+						"onClick": "this.parent.focus",
+						"sndClick": "click",
+						"sndOver": "over"
+					}
+				}
+			]
+		},
+		{
+			"c": "Trigger",
+			"p": {
+				"x": -10,
+				"y": -104,
+				"dataPath": "this.parent.#text-input.isEmpty",
+				"invert": true,
+				"pow": 0.1,
+				"damp": 0.7,
+				"scaleShift": -1
+			},
+			":": [
+				{
+					"c": "Button",
+					"p": {
+						"tint": 3646481,
+						"hoverImage": "EMPTY",
+						"onClick": "game.hideModal",
+						"hotkey": 13,
+						"sndClick": "click",
+						"sndOver": "over"
+					},
+					":": [
+						{
+							"c": "MovieClip",
+							"p": {
+								"scale.x": 18.150000000000002,
+								"scale.y": 4.32,
+								"image": "WHITE",
+								"tint": 899708,
+								"isPlaying": false,
+								"timeline": {
+									"l": {
+										"btn-over": 4,
+										"btn-out": 36
+									},
+									"p": 0.02,
+									"d": 0.85,
+									"f": [
+										{
+											"n": "tintG",
+											"t": [
+												{
+													"v": 186,
+													"t": 0,
+													"m": 1
+												},
+												{
+													"v": 139,
+													"t": 10,
+													"m": 1,
+													"a": "this.stop"
+												},
+												{
+													"v": 186,
+													"t": 44,
+													"m": 1,
+													"a": "this.stop"
+												}
+											]
+										}
+									]
+								},
+								"tintG": 186
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"translatableText": "ok",
+								"style.fontSize": 29,
+								"verticalAlign": "center"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
