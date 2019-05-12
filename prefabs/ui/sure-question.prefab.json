@@ -1,0 +1,190 @@
+{
+	"c": "Container",
+	"p": {
+		"name": "ui/sure-question"
+	},
+	":": [
+		{
+			"c": "MovieClip",
+			"p": {
+				"name": "backdrop",
+				"x": 640,
+				"y": 360,
+				"scale.x": 128,
+				"scale.y": 72,
+				"timeline": {
+					"l": {},
+					"p": 0.02,
+					"d": 0.85,
+					"f": [
+						{
+							"n": "alpha",
+							"t": [
+								{
+									"v": 0,
+									"t": 0,
+									"m": 1
+								},
+								{
+									"v": 1,
+									"t": 7,
+									"m": 1
+								}
+							]
+						}
+					]
+				},
+				"alpha": 0
+			},
+			":": [
+				{
+					"c": "Button",
+					"p": {
+						"name": "easyCloseBtn",
+						"alpha": 0.7000000000000001,
+						"image": "WHITE",
+						"tint": 40,
+						"hoverImage": "WHITE",
+						"pressImage": "WHITE",
+						"disabledImage": "WHITE",
+						"hotkey": 27,
+						"sndClick": "click"
+					}
+				}
+			]
+		},
+		{
+			"c": "OrientationTrigger",
+			"p": {
+				"portraitX": -216,
+				"portraitY": 59,
+				"portraitScaleY": 0.66,
+				"portraitScaleX": 0.66
+			},
+			":": [
+				{
+					"c": "MovieClip",
+					"p": {
+						"name": "main",
+						"x": 640,
+						"y": 370,
+						"tint": 0,
+						"timeline": {
+							"l": {},
+							"p": 0.06,
+							"d": 0.73,
+							"f": [
+								{
+									"n": "scale.x",
+									"t": [
+										{
+											"v": 0,
+											"t": 0
+										},
+										{
+											"v": 1,
+											"t": 12
+										}
+									]
+								},
+								{
+									"n": "scale.y",
+									"t": [
+										{
+											"v": 0,
+											"t": 0
+										},
+										{
+											"v": 1,
+											"t": 12
+										}
+									]
+								}
+							]
+						},
+						"scale.x": 0,
+						"scale.y": 0
+					},
+					":": [
+						{
+							"c": "Sprite",
+							"p": {
+								"x": -333,
+								"y": -267,
+								"interactive": true,
+								"scale.x": 66,
+								"scale.y": 54,
+								"image": "WHITE",
+								"tint": 0
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"name": "title",
+								"y": -233,
+								"translatableText": "modal_title",
+								"style.fontSize": 41,
+								"style.fill": "#0c0",
+								"style.fontWeight": "bolder"
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"name": "message",
+								"y": -65,
+								"text": "message text",
+								"style.fontSize": 30
+							}
+						},
+						{
+							"c": "Button",
+							"p": {
+								"name": "okBtn",
+								"x": -130,
+								"y": 204,
+								"image": "ui/button.png",
+								"sndClick": "click",
+								"sndOver": "over"
+							},
+							":": [
+								{
+									"c": "Text",
+									"p": {
+										"name": "label",
+										"y": -23,
+										"translatableText": "ok",
+										"style.fontSize": 35
+									}
+								}
+							]
+						},
+						{
+							"c": "Button",
+							"p": {
+								"name": "noBtn",
+								"x": 130,
+								"y": 204,
+								"image": "ui/button.png",
+								"sndClick": "click",
+								"sndOver": "over"
+							},
+							":": [
+								{
+									"c": "Text",
+									"p": {
+										"name": "label",
+										"y": -23,
+										"translatableText": "no",
+										"style.fontSize": 35
+									}
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
