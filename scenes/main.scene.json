@@ -358,6 +358,7 @@
 		{
 			"c": "Bunny",
 			"p": {
+				"name": "bunny2",
 				"x": 110,
 				"y": 371,
 				"image": "bunny.png"
@@ -514,7 +515,8 @@
 								},
 								{
 									"v": 198,
-									"t": 63
+									"t": 63,
+									"a": "FlyText.flyText`Text-1,0,0"
 								},
 								{
 									"v": 399,

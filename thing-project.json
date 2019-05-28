@@ -26,7 +26,8 @@
 	},
 	"fontHolderHTML": "<span style=\"font-family: 'Roboto', Arial;\">ФZ<span style=\"font-weight: bold;color:rgba(0,0,0,0.01);\">ЯS</span></span>",
 	"loadOnDemandSounds": {
-		"mus/gs3_title": 1
+		"mus/shop": 2,
+		"mus/gs3_title": 2
 	},
 	"muteOnFocusLost": true,
 	"version": "0.0.9",
@@ -34,16 +35,16 @@
 	"localesPath": "locales",
 	"embedLocales": true,
 	"loadOnDemandTextures": {
-		"ondemand/1.png": 1,
-		"ondemand/2.png": 1
+		"ondemand/1.png": 2,
+		"ondemand/2.png": 2
 	},
 	"__loadOnDemandTexturesFolders": {
-		"ondemand": 1
+		"ondemand": 2
 	},
 	"autoFullscreen": false,
 	"autoFullscreenDesktop": false,
 	"autoFullscreenMobile": false,
-	"soundDefaultBitrate": 96,
+	"soundDefaultBitrate": 48,
 	"soundBitrates": {},
 	"__proxyFetchesViaNodeServer": false
 }

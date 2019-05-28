@@ -1,7 +1,7 @@
 {
 	"c": "OrientationTrigger",
 	"p": {
-		"name": "prompt",
+		"name": "ui/prompt",
 		"landscapeX": 640,
 		"landscapeY": 360,
 		"portraitX": 205,
@@ -9,16 +9,62 @@
 	},
 	":": [
 		{
-			"c": "Sprite",
+			"c": "MovieClip",
 			"p": {
 				"name": "backdrop",
-				"x": -640,
-				"y": -360,
-				"alpha": 0.84,
 				"scale.x": 128,
 				"scale.y": 72,
+				"timeline": {
+					"l": {},
+					"p": 0.02,
+					"d": 0.85,
+					"f": [
+						{
+							"n": "alpha",
+							"t": [
+								{
+									"v": 0,
+									"t": 0,
+									"m": 1
+								},
+								{
+									"v": 1,
+									"t": 7,
+									"m": 1
+								}
+							]
+						}
+					]
+				},
+				"alpha": 0
+			},
+			":": [
+				{
+					"c": "Button",
+					"p": {
+						"name": "easyCloseBtn",
+						"alpha": 0.7000000000000001,
+						"image": "WHITE",
+						"tint": 40,
+						"hoverImage": "WHITE",
+						"pressImage": "WHITE",
+						"disabledImage": "WHITE",
+						"hotkey": 27,
+						"sndClick": "click"
+					}
+				}
+			]
+		},
+		{
+			"c": "Sprite",
+			"p": {
+				"x": -333,
+				"y": -336,
+				"interactive": true,
+				"scale.x": 66,
+				"scale.y": 31.310000000000002,
 				"image": "WHITE",
-				"tint": 41
+				"tint": 0
 			}
 		},
 		{
@@ -58,7 +104,6 @@
 					"c": "MovieClip",
 					"p": {
 						"name": "cursor",
-						"alpha": 0,
 						"scale.x": 0.42,
 						"scale.y": 3.16,
 						"pivot.x": -5,
@@ -100,7 +145,8 @@
 									]
 								}
 							]
-						}
+						},
+						"alpha": 0
 					}
 				},
 				{
@@ -137,9 +183,9 @@
 				{
 					"c": "Button",
 					"p": {
+						"name": "okBtn",
 						"tint": 3646481,
 						"hoverImage": "EMPTY",
-						"onClick": "game.hideModal",
 						"hotkey": 13,
 						"sndClick": "click",
 						"sndOver": "over"
