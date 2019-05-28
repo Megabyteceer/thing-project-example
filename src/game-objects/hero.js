@@ -1,4 +1,4 @@
-import keys from "thing-engine/js/utils/keys.js";
+import Keys from "thing-engine/js/utils/keys.js";
 import Unit from "./unit.js";
 import { stepTo } from "thing-engine/js/utils/utils.js";
 
@@ -31,16 +31,16 @@ class Hero extends Unit {
 	}
 
 	movementProcess() {
-		if (keys.left && this.isFloorThere(-this.radius - 1, 0)) {
+		if (Keys.left && this.isFloorThere(-this.radius - 1, 0)) {
 			this.xSpeed -= 2;
-		} else if (keys.right && this.isFloorThere(this.radius + 1, 0)) {
+		} else if (Keys.right && this.isFloorThere(this.radius + 1, 0)) {
 			this.xSpeed += 2;
 		} else {
 			this.xSpeed = stepTo(this.xSpeed, 0, 2);
 		}
-		if (keys.up && this.isFloorThere(0, -this.radius - 1)) {
+		if (Keys.up && this.isFloorThere(0, -this.radius - 1)) {
 			this.ySpeed -= 2;
-		} else if (keys.down && this.isFloorThere(0, this.radius + 1)) {
+		} else if (Keys.down && this.isFloorThere(0, this.radius + 1)) {
 			this.ySpeed += 2;
 		} else {
 			this.ySpeed = stepTo(this.ySpeed, 0, 2);
