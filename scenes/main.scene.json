@@ -28,7 +28,7 @@
 			"c": "OrientationTrigger",
 			"p": {
 				"landscapeX": 640,
-				"landscapeY": 25,
+				"landscapeY": 60,
 				"portraitX": 205,
 				"portraitY": 25
 			},
@@ -36,12 +36,12 @@
 				{
 					"c": "Shape",
 					"p": {
+						"name": "title-bg",
 						"x": -260,
 						"y": -10,
 						"shape": 1,
-						"shapeWidth": 518,
-						"shapeHeight": 137,
-						"shapeRadius": 14,
+						"width": 491,
+						"height": 133,
 						"lWidth": 4,
 						"lAlpha": 0.48999999999999966
 					}
@@ -437,8 +437,8 @@
 						"x": 5,
 						"alpha": 0.5000000000000001,
 						"shape": 3,
-						"shapeWidth": 105,
-						"shapeHeight": 25
+						"width": 105,
+						"height": 25
 					}
 				}
 			]
@@ -516,7 +516,7 @@
 								{
 									"v": 198,
 									"t": 63,
-									"a": "FlyText.flyText`Text-1,0,0"
+									"a": "FlyText.flyText`Text-1,330,0"
 								},
 								{
 									"v": 399,
@@ -533,6 +533,153 @@
 					]
 				}
 			}
+		},
+		{
+			"c": "ProgressBar",
+			"p": {
+				"x": 347,
+				"y": 25,
+				"alpha": 0.68,
+				"interactive": true,
+				"dataPath": "game.currentScene.all.title-bg.height",
+				"height": 208,
+				"capMargin": 5,
+				"refreshInterval": 0,
+				"min": 40,
+				"max": 700,
+				"step": 10
+			},
+			":": [
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "bg",
+						"alpha": 0.5,
+						"interactive": true,
+						"scale.y": 20.8,
+						"image": "WHITE"
+					}
+				},
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "bar",
+						"interactive": true,
+						"scale.y": 9.393939393939394,
+						"image": "WHITE",
+						"tint": 65280
+					}
+				},
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "cap",
+						"x": 5,
+						"interactive": true,
+						"scale.x": 2,
+						"scale.y": 2,
+						"pivot.x": 5,
+						"pivot.y": 5,
+						"image": "WHITE"
+					}
+				}
+			]
+		},
+		{
+			"c": "ProgressBar",
+			"p": {
+				"x": 391,
+				"y": 30,
+				"rotation": -1.5707963267948966,
+				"alpha": 0.68,
+				"interactive": true,
+				"dataPath": "game.currentScene.all.title-bg.width",
+				"height": 208,
+				"capMargin": 5,
+				"refreshInterval": 0,
+				"min": 40,
+				"max": 700,
+				"step": 10
+			},
+			":": [
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "bg",
+						"alpha": 0.5,
+						"interactive": true,
+						"scale.y": 20.8,
+						"image": "WHITE"
+					}
+				},
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "bar",
+						"interactive": true,
+						"scale.y": 13.666666666666666,
+						"image": "WHITE",
+						"tint": 65280
+					}
+				},
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "cap",
+						"x": 5,
+						"interactive": true,
+						"scale.x": 2,
+						"scale.y": 2,
+						"pivot.x": 5,
+						"pivot.y": 5,
+						"image": "WHITE"
+					}
+				}
+			]
+		},
+		{
+			"c": "ProgressBar",
+			"p": {
+				"x": 172,
+				"y": 96,
+				"interactive": true,
+				"dataPath": "all.bunny2.scale.y"
+			},
+			":": [
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "bg",
+						"alpha": 0.5,
+						"interactive": true,
+						"scale.y": 20,
+						"image": "WHITE"
+					}
+				},
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "bar",
+						"interactive": true,
+						"scale.y": 13.666666666666666,
+						"image": "WHITE",
+						"tint": 65280
+					}
+				},
+				{
+					"c": "Sprite",
+					"p": {
+						"name": "cap",
+						"x": 5,
+						"interactive": true,
+						"scale.x": 2,
+						"scale.y": 2,
+						"pivot.x": 5,
+						"pivot.y": 5,
+						"image": "WHITE"
+					}
+				}
+			]
 		}
 	]
 }
