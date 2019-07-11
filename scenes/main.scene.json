@@ -86,7 +86,7 @@
 							"c": "Sprite",
 							"p": {
 								"x": -244,
-								"y": -26,
+								"y": 134.83333333333334,
 								"scale.x": 45.730000000000004,
 								"scale.y": 1.76,
 								"image": "WHITE",
@@ -97,7 +97,7 @@
 							"c": "Sprite",
 							"p": {
 								"x": -244,
-								"y": 32,
+								"y": 31.77272727272727,
 								"scale.x": 45.730000000000004,
 								"scale.y": 1.98,
 								"image": "WHITE",
@@ -350,8 +350,8 @@
 		{
 			"c": "Bunny",
 			"p": {
-				"x": 237,
-				"y": 583,
+				"x": 82,
+				"y": 593,
 				"image": "bunny.png"
 			}
 		},
@@ -405,6 +405,7 @@
 				{
 					"c": "Button",
 					"p": {
+						"x": 298,
 						"image": "ui/button.png",
 						"sndClick": "click",
 						"sndOver": "over"
@@ -446,16 +447,16 @@
 		{
 			"c": "PrefabReference",
 			"p": {
-				"x": 495,
-				"y": 406,
+				"x": 53,
+				"y": 400,
 				"prefabName": "bunny-double"
 			}
 		},
 		{
 			"c": "PrefabReference",
 			"p": {
-				"x": 671,
-				"y": 435,
+				"x": 101,
+				"y": 504,
 				"prefabName": "bunny-double"
 			},
 			":": [
@@ -535,149 +536,127 @@
 			}
 		},
 		{
-			"c": "ProgressBar",
+			"c": "OrientationTrigger",
 			"p": {
-				"x": 347,
-				"y": 25,
-				"alpha": 0.68,
-				"interactive": true,
-				"dataPath": "game.currentScene.all.title-bg.height",
-				"height": 208,
-				"capMargin": 5,
-				"refreshInterval": 0,
-				"min": 40,
-				"max": 700,
-				"step": 10
+				"landscapeX": 352,
+				"landscapeY": 127,
+				"portraitX": 16,
+				"portraitY": 270
 			},
 			":": [
 				{
-					"c": "Sprite",
+					"c": "ProgressBar",
 					"p": {
-						"name": "bg",
-						"alpha": 0.5,
+						"x": -5,
+						"y": -102,
+						"alpha": 0.68,
 						"interactive": true,
-						"scale.y": 20.8,
-						"image": "WHITE"
-					}
-				},
-				{
-					"c": "Sprite",
-					"p": {
-						"name": "bar",
-						"interactive": true,
-						"scale.y": 9.393939393939394,
-						"image": "WHITE",
-						"tint": 65280
-					}
-				},
-				{
-					"c": "Sprite",
-					"p": {
-						"name": "cap",
-						"x": 5,
-						"interactive": true,
-						"scale.x": 2,
-						"scale.y": 2,
-						"pivot.x": 5,
-						"pivot.y": 5,
-						"image": "WHITE"
-					}
+						"dataPath": "game.currentScene.all.title-bg.height",
+						"height": 208,
+						"refreshInterval": 0,
+						"min": 40,
+						"max": 700,
+						"step": 10
+					},
+					":": [
+						{
+							"c": "Sprite",
+							"p": {
+								"name": "bg",
+								"alpha": 0.5,
+								"interactive": true,
+								"scale.y": 20.8,
+								"image": "WHITE"
+							}
+						},
+						{
+							"c": "Sprite",
+							"p": {
+								"name": "bar",
+								"interactive": true,
+								"scale.y": 9.393939393939394,
+								"image": "WHITE",
+								"tint": 65280
+							}
+						},
+						{
+							"c": "Sprite",
+							"p": {
+								"name": "cap",
+								"x": 5,
+								"y": 6.9,
+								"interactive": true,
+								"scale.x": 2,
+								"scale.y": 2,
+								"pivot.x": 5,
+								"pivot.y": 5,
+								"image": "WHITE"
+							}
+						}
+					]
 				}
 			]
 		},
 		{
-			"c": "ProgressBar",
+			"c": "OrientationTrigger",
 			"p": {
-				"x": 391,
-				"y": 30,
-				"rotation": -1.5707963267948966,
-				"alpha": 0.68,
-				"interactive": true,
-				"dataPath": "game.currentScene.all.title-bg.width",
-				"height": 208,
-				"capMargin": 5,
-				"refreshInterval": 0,
-				"min": 40,
-				"max": 700,
-				"step": 10
+				"landscapeX": 511,
+				"landscapeY": 25,
+				"portraitX": 214,
+				"portraitY": 170
 			},
 			":": [
 				{
-					"c": "Sprite",
+					"c": "ProgressBar",
 					"p": {
-						"name": "bg",
-						"alpha": 0.5,
+						"x": -120,
+						"y": 5,
+						"rotation": -1.5707963267948966,
+						"alpha": 0.68,
 						"interactive": true,
-						"scale.y": 20.8,
-						"image": "WHITE"
-					}
-				},
-				{
-					"c": "Sprite",
-					"p": {
-						"name": "bar",
-						"interactive": true,
-						"scale.y": 13.666666666666666,
-						"image": "WHITE",
-						"tint": 65280
-					}
-				},
-				{
-					"c": "Sprite",
-					"p": {
-						"name": "cap",
-						"x": 5,
-						"interactive": true,
-						"scale.x": 2,
-						"scale.y": 2,
-						"pivot.x": 5,
-						"pivot.y": 5,
-						"image": "WHITE"
-					}
-				}
-			]
-		},
-		{
-			"c": "ProgressBar",
-			"p": {
-				"x": 172,
-				"y": 96,
-				"interactive": true,
-				"dataPath": "all.bunny2.scale.y"
-			},
-			":": [
-				{
-					"c": "Sprite",
-					"p": {
-						"name": "bg",
-						"alpha": 0.5,
-						"interactive": true,
-						"scale.y": 20,
-						"image": "WHITE"
-					}
-				},
-				{
-					"c": "Sprite",
-					"p": {
-						"name": "bar",
-						"interactive": true,
-						"scale.y": 13.666666666666666,
-						"image": "WHITE",
-						"tint": 65280
-					}
-				},
-				{
-					"c": "Sprite",
-					"p": {
-						"name": "cap",
-						"x": 5,
-						"interactive": true,
-						"scale.x": 2,
-						"scale.y": 2,
-						"pivot.x": 5,
-						"pivot.y": 5,
-						"image": "WHITE"
-					}
+						"dataPath": "game.currentScene.all.title-bg.width",
+						"height": 208,
+						"refreshInterval": 0,
+						"min": 40,
+						"max": 700,
+						"step": 10
+					},
+					":": [
+						{
+							"c": "Sprite",
+							"p": {
+								"name": "bg",
+								"alpha": 0.5,
+								"interactive": true,
+								"scale.y": 20.8,
+								"image": "WHITE"
+							}
+						},
+						{
+							"c": "Sprite",
+							"p": {
+								"name": "bar",
+								"interactive": true,
+								"scale.y": 13.666666666666666,
+								"image": "WHITE",
+								"tint": 65280
+							}
+						},
+						{
+							"c": "Sprite",
+							"p": {
+								"name": "cap",
+								"x": 5,
+								"y": 31.77272727272727,
+								"interactive": true,
+								"scale.x": 2,
+								"scale.y": 2,
+								"pivot.x": 5,
+								"pivot.y": 5,
+								"image": "WHITE"
+							}
+						}
+					]
 				}
 			]
 		}
