@@ -97,19 +97,23 @@
 				"style.fontSize": 27,
 				"style.align": "left",
 				"verticalAlign": "center",
-				"maxInputLen": 16
+				"maxInputLen": 16,
+				"onChange": "this.#cursor.gotoLabel`onChange"
 			},
 			":": [
 				{
 					"c": "MovieClip",
 					"p": {
 						"name": "cursor",
+						"alpha": 0,
 						"scale.x": 0.42,
 						"scale.y": 3.16,
 						"pivot.x": -5,
 						"image": "WHITE",
 						"timeline": {
-							"l": {},
+							"l": {
+								"onChange": 22
+							},
 							"p": 0.02,
 							"d": 0.85,
 							"f": [
@@ -145,8 +149,7 @@
 									]
 								}
 							]
-						},
-						"alpha": 0
+						}
 					}
 				},
 				{
