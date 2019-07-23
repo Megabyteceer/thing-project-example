@@ -1,4 +1,4 @@
-import Lib from "thing-engine/js/lib.js";
+import Tilemap from "thing-engine/js/components/tilemap";
 
 let tm;
 
@@ -20,7 +20,7 @@ const imgIdToType = [
 imgIdToType[-1] = -1;
 
 
-Lib.tileMapProcessor = {
+Tilemap.tileMapProcessor = {
 	onTileEditCallback:(tilemap, x, y, type) => {
 		tm = tilemap;
 		processCell(x, y, type);
