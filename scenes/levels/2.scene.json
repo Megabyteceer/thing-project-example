@@ -546,8 +546,8 @@
 						"y": -22,
 						"translatableText": "yes",
 						"style.fontSize": 34,
-						"style.stroke": "#472",
-						"style.strokeThickness": 5
+						"style.strokeThickness": 5,
+						"style.stroke": "#472"
 					}
 				}
 			]
@@ -576,7 +576,9 @@
 				"style.fill": "#acb",
 				"dataPath": "all.bunny.x",
 				"template": "X: %d",
-				"isNumeric": true
+				"isNumeric": true,
+				"plusMinus": true,
+				"decimalsCount": 2
 			}
 		},
 		{
@@ -630,8 +632,8 @@
 								"text": "Alpha 0.5",
 								"style.fontSize": 37,
 								"style.fill": "#fff",
-								"style.stroke": "#040",
-								"style.strokeThickness": 6
+								"style.strokeThickness": 6,
+								"style.stroke": "#040"
 							}
 						}
 					]
@@ -654,8 +656,8 @@
 								"text": "Alpha 1",
 								"style.fontSize": 37,
 								"style.fill": "#fff",
-								"style.stroke": "#040",
-								"style.strokeThickness": 6
+								"style.strokeThickness": 6,
+								"style.stroke": "#040"
 							}
 						}
 					]
