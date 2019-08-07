@@ -4,7 +4,7 @@
 */
 
 import Scene from "thing-engine/js/components/scene.js";
-import TilemapProcessor from "../utils/tilemap-processor.js"; // eslint-disable-line no-unused-vars
+import "../utils/tilemap-processor.js";
 import game from "thing-engine/js/game.js";
 
 const CAMERA_BORDER = -110;

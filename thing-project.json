@@ -2,7 +2,7 @@
 	"title": "thing-project-example",
 	"id": "thing-project-example.pixel-cave.com",
 	"icon": "img/bunny.png",
-	"lastSceneName": "main",
+	"__lastSceneName": "main",
 	"screenOrientation": "auto",
 	"width": 1280,
 	"height": 720,
@@ -41,7 +41,6 @@
 	"__loadOnDemandTexturesFolders": {
 		"ondemand": 2
 	},
-	"autoFullscreen": false,
 	"autoFullscreenDesktop": false,
 	"autoFullscreenMobile": false,
 	"soundDefaultBitrate": 48,

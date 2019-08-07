@@ -1,12 +1,10 @@
 import DSprite from "thing-engine/js/components/d-sprite.js";
-import Gameplay from "../scenes/gameplay.js"; // eslint-disable-line no-unused-vars
 import Scene from "thing-engine/js/components/scene.js";
 
 class Unit extends DSprite {
 
 	init() {
 		super.init();
-		/**@type {Gameplay} */
 		this.scene = this.findParentByType(Scene);
 	}
 

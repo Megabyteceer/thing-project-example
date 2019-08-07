@@ -16,8 +16,8 @@
 				"alpha": 0,
 				"scale.x": 128,
 				"scale.y": 72,
-				"image": "WHITE",
 				"tint": 0,
+				"image": "WHITE",
 				"timeline": {
 					"l": {
 						"hide fader": 180
@@ -65,7 +65,6 @@
 		{
 			"c": "MovieClip",
 			"p": {
-				"alpha": 0,
 				"timeline": {
 					"l": {
 						"hide fader": 238
@@ -120,7 +119,8 @@
 							]
 						}
 					]
-				}
+				},
+				"alpha": 0
 			},
 			":": [
 				{

@@ -524,8 +524,8 @@
 				"name": "bunny",
 				"x": 621,
 				"y": 470,
-				"image": "bunny.png",
 				"tint": 1244928,
+				"image": "bunny.png",
 				"xSpeed": 14.375
 			}
 		},
@@ -586,8 +586,8 @@
 			"p": {
 				"x": 153,
 				"y": 180,
-				"image": "bunny.png",
 				"tint": 16735781,
+				"image": "bunny.png",
 				"xSpeed": 6
 			},
 			":": [
@@ -688,8 +688,8 @@
 							"p": {
 								"scale.x": 5,
 								"scale.y": 5,
-								"image": "WHITE",
-								"tint": 16711680
+								"tint": 16711680,
+								"image": "WHITE"
 							}
 						},
 						{
@@ -729,8 +729,8 @@
 								"interactive": true,
 								"scale.x": 34.897,
 								"scale.y": 21.091999999999995,
-								"image": "WHITE",
-								"tint": 0
+								"tint": 0,
+								"image": "WHITE"
 							}
 						},
 						{

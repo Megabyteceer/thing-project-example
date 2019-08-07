@@ -1,15 +1,9 @@
-import Tilemap from "thing-engine/js/components/tilemap";
+import Tilemap from "thing-engine/js/components/tilemap.js";
 
 let tm;
 
 const GROUND = 1;
 const WALL = 2;
-
-
-const types = [
-	{name:'Groung', value: GROUND},
-	{name:'Wall', value: WALL}
-];
 
 const imgIdToType = [
 	GROUND,
@@ -19,22 +13,16 @@ const imgIdToType = [
 ];
 imgIdToType[-1] = -1;
 
-
-Tilemap.tileMapProcessor = {
-	onTileEditCallback:(tilemap, x, y, type) => {
-		tm = tilemap;
-		processCell(x, y, type);
-		y++;
-		processCell(x, y, getCellType(x,y));
-	},
-	imageToType,
-	types,
-	getCellType
-};
-
 function imageToType(imgId) {
 	return imgIdToType[imgId];
 }
+
+
+/// #if EDITOR
+const types = [
+	{name:'Groung', value: GROUND},
+	{name:'Wall', value: WALL}
+];
 
 function getCellType(x, y) {
 	return imageToType(tm.getTile(x, y));
@@ -52,5 +40,18 @@ function processCell(x, y, type) {
 	}
 	tm.setTile(x, y, imgId);
 }
+/// #endif
 
-export default null;
+Tilemap.tileMapProcessor = {
+	imageToType
+	/// #if EDITOR
+	,
+	onTileEditCallback:(tilemap, x, y, type) => {
+		tm = tilemap;
+		processCell(x, y, type);
+		y++;
+		processCell(x, y, getCellType(x,y));
+	},
+	types
+	/// #endif
+};
