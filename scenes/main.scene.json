@@ -390,7 +390,7 @@
 				"x": 1024,
 				"y": 248,
 				"image": "ui/button.png",
-				"onClick": "TextInput.prompt`Enter you text,18,text here",
+				"onClick": "classes.TextInput.prompt`Enter you text,18,text here",
 				"sndClick": "click",
 				"sndOver": "over"
 			}
