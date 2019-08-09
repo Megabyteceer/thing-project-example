@@ -524,8 +524,8 @@
 				"name": "bunny",
 				"x": 621,
 				"y": 470,
-				"tint": 1244928,
 				"image": "bunny.png",
+				"tint": 1244928,
 				"xSpeed": 14.375
 			}
 		},
@@ -586,8 +586,8 @@
 			"p": {
 				"x": 153,
 				"y": 180,
-				"tint": 16735781,
 				"image": "bunny.png",
+				"tint": 16735781,
 				"xSpeed": 6
 			},
 			":": [
@@ -620,7 +620,7 @@
 						"x": -107,
 						"y": -7,
 						"image": "ui/button.png",
-						"onClick": "this.parent.parent.#bunny.setTransparency`0.5",
+						"onClick": "setValueByPath`all.bunny.alpha,0.5",
 						"sndClick": "click",
 						"sndOver": "over"
 					},
@@ -688,8 +688,8 @@
 							"p": {
 								"scale.x": 5,
 								"scale.y": 5,
-								"tint": 16711680,
-								"image": "WHITE"
+								"image": "WHITE",
+								"tint": 16711680
 							}
 						},
 						{
@@ -729,8 +729,8 @@
 								"interactive": true,
 								"scale.x": 34.897,
 								"scale.y": 21.091999999999995,
-								"tint": 0,
-								"image": "WHITE"
+								"image": "WHITE",
+								"tint": 0
 							}
 						},
 						{
