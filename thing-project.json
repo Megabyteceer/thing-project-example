@@ -35,8 +35,8 @@
 	"localesPath": "locales",
 	"embedLocales": true,
 	"loadOnDemandTextures": {
-		"ondemand/1.png": 2,
-		"ondemand/2.png": 2
+		"ondemand/2.png": 2,
+		"ondemand/1.png": 2
 	},
 	"__loadOnDemandTexturesFolders": {
 		"ondemand": 2
@@ -48,5 +48,6 @@
 	"__proxyFetchesViaNodeServer": false,
 	"renderResolutionMobile": 1,
 	"__localesNewKeysPrefix": "",
-	"__externalLocalesSource": ""
+	"__externalLocalesSource": "",
+	"defaultLanguage": "en"
 }
