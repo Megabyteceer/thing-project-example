@@ -51,7 +51,7 @@ class Hero extends Unit {
 export default Hero;
 
 /// #if EDITOR
-__EDITOReditableProps(Hero, [{
+__EDITOR_editableProps(Hero, [{
 	type: 'splitter',
 	title: 'Hero:',
 	name: 'hero'

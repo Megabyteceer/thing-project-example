@@ -68,7 +68,7 @@ export default PerspectiveSprite;
 /// #if EDITOR
 
 PerspectiveSprite.__EDITOR_icon = 'tree/perspective';
-__EDITOReditableProps(PerspectiveSprite, [
+__EDITOR_editableProps(PerspectiveSprite, [
 	{
 		type: 'splitter',
 		title: 'Vertices:',

@@ -1,0 +1,191 @@
+{
+	"c": "Scene",
+	"p": {
+		"backgroundColor": 0,
+		"faderType": "fader/default"
+	},
+	":": [
+		{
+			"c": "Container",
+			"p": {
+				"name": "__debug-objects",
+				"x": 361,
+				"y": 274
+			},
+			":": [
+				{
+					"c": "Text",
+					"p": {
+						"x": 1,
+						"y": 3,
+						"text": "two low-dash (__) named objects will be cutoff in release build",
+						"style.fontSize": 20,
+						"style.align": "left"
+					}
+				},
+				{
+					"c": "Button",
+					"p": {
+						"x": 104,
+						"y": 72,
+						"onClick": "showQuestion`Question Title,debug button clicked"
+					},
+					":": [
+						{
+							"c": "Shape",
+							"p": {
+								"x": -100,
+								"y": -25,
+								"width": 200,
+								"height": 50,
+								"shapeFillColor": 80,
+								"shapeLineWidth": 2,
+								"shapeLineColor": 5263520
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"text": "DEBUG BUTTON",
+								"style.fontSize": 19,
+								"verticalAlign": "center"
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"c": "Container",
+			"p": {
+				"name": "___guide-objects",
+				"x": 321,
+				"y": 428
+			},
+			":": [
+				{
+					"c": "Text",
+					"p": {
+						"x": -186,
+						"y": 165,
+						"text": "three low-dash (___) named objects exist in editor time only",
+						"style.fontSize": 20,
+						"style.align": "left"
+					}
+				},
+				{
+					"c": "DSprite",
+					"p": {
+						"x": -201,
+						"y": -56,
+						"scale.x": 0.2,
+						"scale.y": 150,
+						"image": "WHITE",
+						"tint": 65535
+					}
+				},
+				{
+					"c": "DSprite",
+					"p": {
+						"x": 794,
+						"y": -4,
+						"scale.x": 0.2,
+						"scale.y": 150,
+						"image": "WHITE",
+						"tint": 65535
+					}
+				},
+				{
+					"c": "DSprite",
+					"p": {
+						"x": 286,
+						"y": 195,
+						"rotation": 1.5707963267948966,
+						"scale.x": 0.2,
+						"scale.y": 150,
+						"image": "WHITE",
+						"tint": 65535
+					}
+				},
+				{
+					"c": "DSprite",
+					"p": {
+						"x": 340,
+						"y": -382,
+						"rotation": -1.5707963267948966,
+						"scale.x": 0.2,
+						"scale.y": 150,
+						"image": "WHITE",
+						"tint": 65535
+					}
+				}
+			]
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"name": "__debug-prefab-ref",
+				"x": 36,
+				"y": 48,
+				"prefabName": "__debug-prefabs/debug-prefab"
+			}
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"name": "debug-prefab-ref",
+				"x": 37,
+				"y": 104,
+				"prefabName": "debug-prefabs/__debug-prefab"
+			}
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"name": "___guide-image",
+				"x": 49,
+				"y": 191,
+				"prefabName": "___guide-prefabs/guide-prefab"
+			}
+		},
+		{
+			"c": "OrientationTrigger",
+			"p": {
+				"landscapeX": 1244,
+				"landscapeY": 49,
+				"portraitX": 357,
+				"portraitY": 47
+			},
+			":": [
+				{
+					"c": "Button",
+					"p": {
+						"tint": 14417920,
+						"onClick": "game.closeCurrentScene",
+						"sndClick": "click",
+						"sndOver": "over"
+					},
+					":": [
+						{
+							"c": "DSprite",
+							"p": {
+								"scale.x": 5,
+								"scale.y": 5,
+								"image": "WHITE",
+								"tint": 16711680
+							}
+						},
+						{
+							"c": "Text",
+							"p": {
+								"pivot.y": 19,
+								"text": "X",
+								"style.fontSize": 37
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

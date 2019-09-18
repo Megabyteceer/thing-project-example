@@ -1,0 +1,7 @@
+{
+	"c": "DSprite",
+	"p": {
+		"name": "debug-prefabs/__debug-prefab",
+		"image": "ui/__debug.jpg"
+	}
+}

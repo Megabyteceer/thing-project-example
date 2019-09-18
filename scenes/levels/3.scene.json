@@ -238,7 +238,7 @@
 			"p": {
 				"x": 37,
 				"y": 435,
-				"text": "spine test",
+				"text": "spine test (spine version updated. but test dragon is not)",
 				"style.fontSize": 22,
 				"style.align": "left",
 				"style.fill": "#fff"

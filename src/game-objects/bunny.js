@@ -55,7 +55,7 @@ export default Bunny;
 /// #if EDITOR
 Bunny.__EDITOR_group = "Custom/Bunnies"; //group in Classes List Window for more comfort
 
-__EDITOReditableProps(Bunny, [ //list of editable properties
+__EDITOR_editableProps(Bunny, [ //list of editable properties
 	{
 		name:'gravity',
 		type:Number,

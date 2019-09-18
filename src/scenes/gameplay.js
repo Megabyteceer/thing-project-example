@@ -65,7 +65,7 @@ class Gameplay extends Scene {
 export default Gameplay;
 
 /// #if EDITOR
-__EDITOReditableProps(Gameplay, [{
+__EDITOR_editableProps(Gameplay, [{
 	type: 'splitter',
 	title: 'Gameplay:',
 	name: 'gameplay'

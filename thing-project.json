@@ -49,5 +49,6 @@
 	"renderResolutionMobile": 1,
 	"__localesNewKeysPrefix": "",
 	"__externalLocalesSource": "",
-	"defaultLanguage": "en"
+	"defaultLanguage": "en",
+	"__allowUpperCaseFiles": false
 }

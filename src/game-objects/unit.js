@@ -51,7 +51,7 @@ class Unit extends DSprite {
 export default Unit;
 
 /// #if EDITOR
-__EDITOReditableProps(Unit, [
+__EDITOR_editableProps(Unit, [
 	{
 		type: 'splitter',
 		title: 'Unit:',
