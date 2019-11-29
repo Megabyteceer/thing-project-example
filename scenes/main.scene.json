@@ -50,6 +50,7 @@
 					"c": "Text",
 					"p": {
 						"y": 57,
+						"text": "",
 						"translatableText": "title",
 						"style.fontSize": 42,
 						"verticalAlign": "center",
@@ -71,6 +72,7 @@
 							"c": "Text",
 							"p": {
 								"name": "mask",
+								"text": "",
 								"translatableText": "title",
 								"style.fontSize": 42,
 								"verticalAlign": "center",
@@ -109,6 +111,7 @@
 							"p": {
 								"x": -244,
 								"y": 6,
+								"scale.x": 7.45,
 								"scale.y": 12.24,
 								"skew.x": -0.47000000000000003,
 								"image": "WHITE",
@@ -169,8 +172,7 @@
 											]
 										}
 									]
-								},
-								"scale.x": 7.45
+								}
 							}
 						}
 					]
@@ -260,10 +262,14 @@
 					"c": "PerspectiveSprite",
 					"p": {
 						"image": "bunny.png",
-						"x1": 32,
-						"y2": 64,
-						"x3": 32,
-						"y3": 64
+						"x0": 45,
+						"y0": 110,
+						"x1": 77,
+						"y1": 110,
+						"x2": 45,
+						"y2": 174,
+						"x3": 77,
+						"y3": 174
 					}
 				}
 			]
@@ -509,8 +515,7 @@
 							"t": [
 								{
 									"v": 275,
-									"t": 0,
-									"a": "Sound.play`click"
+									"t": 0
 								},
 								{
 									"v": 505,
@@ -597,7 +602,7 @@
 								"name": "bg",
 								"alpha": 0.5,
 								"interactive": true,
-								"scale.y": 20.8,
+								"scale.y": 13,
 								"image": "WHITE"
 							}
 						},
@@ -615,13 +620,13 @@
 							"c": "Sprite",
 							"p": {
 								"name": "cap",
-								"x": 5,
+								"x": 8,
 								"y": 30,
 								"interactive": true,
 								"scale.x": 2,
 								"scale.y": 2,
-								"pivot.x": 5,
-								"pivot.y": 5,
+								"pivot.x": 8,
+								"pivot.y": 8,
 								"image": "WHITE"
 							}
 						}
@@ -660,7 +665,7 @@
 								"name": "bg",
 								"alpha": 0.5,
 								"interactive": true,
-								"scale.y": 20.8,
+								"scale.y": 13,
 								"image": "WHITE"
 							}
 						},
@@ -678,13 +683,13 @@
 							"c": "Sprite",
 							"p": {
 								"name": "cap",
-								"x": 5,
-								"y": 31.77272727272727,
+								"x": 8,
+								"y": 29.77272727272727,
 								"interactive": true,
 								"scale.x": 2,
 								"scale.y": 2,
-								"pivot.x": 5,
-								"pivot.y": 5,
+								"pivot.x": 8,
+								"pivot.y": 8,
 								"image": "WHITE"
 							}
 						}
@@ -737,8 +742,8 @@
 		{
 			"c": "Button",
 			"p": {
-				"x": 544,
-				"y": 667,
+				"x": 519,
+				"y": 651,
 				"image": "ui/button.png",
 				"onClick": "all.selector.select`all.rabbit1",
 				"sndClick": "click",
@@ -812,6 +817,23 @@
 				"x": 615,
 				"y": 264,
 				"prefabName": "bunny-double"
+			}
+		},
+		{
+			"c": "Text",
+			"p": {
+				"x": 430,
+				"y": 448,
+				"text": "New Text 1",
+				"style.fontSize": 35,
+				"style.strokeThickness": 2,
+				"style.stroke": "#ff8000",
+				"style.dropShadow": true,
+				"style.drShColor": "#ff0000",
+				"style.drShAngle": 1.16,
+				"style.drShBlur": 5.8500000000000005,
+				"style.drShDistance": 3,
+				"style.fontWeight": "bold"
 			}
 		}
 	]
