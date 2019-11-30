@@ -2,7 +2,7 @@
 	"title": "thing-project-example",
 	"id": "thing-project-example.pixel-cave.com",
 	"icon": "img/bunny.png",
-	"__lastSceneName": "main",
+	"__lastSceneName": "levels/1",
 	"screenOrientation": "auto",
 	"width": 1280,
 	"height": 720,

@@ -13,11 +13,10 @@
 			"c": "MovieClip",
 			"p": {
 				"name": "fader/default",
-				"alpha": 0,
-				"scale.x": 128,
-				"scale.y": 72,
-				"tint": 0,
+				"scale.x": 80,
+				"scale.y": 45,
 				"image": "WHITE",
+				"tint": 0,
 				"timeline": {
 					"l": {
 						"hide fader": 180
@@ -59,7 +58,8 @@
 							]
 						}
 					]
-				}
+				},
+				"alpha": 0
 			}
 		},
 		{
@@ -126,6 +126,7 @@
 				{
 					"c": "Text",
 					"p": {
+						"text": "",
 						"translatableText": "loading",
 						"style.fontSize": 35
 					}

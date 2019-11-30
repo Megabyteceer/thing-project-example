@@ -544,6 +544,7 @@
 					"c": "Text",
 					"p": {
 						"y": -22,
+						"text": "",
 						"translatableText": "yes",
 						"style.fontSize": 34,
 						"style.strokeThickness": 5,
@@ -557,6 +558,7 @@
 			"p": {
 				"x": 17,
 				"y": 588,
+				"text": "",
 				"translatableText": "ok",
 				"style.fontSize": 16,
 				"style.align": "left",
@@ -686,8 +688,8 @@
 						{
 							"c": "DSprite",
 							"p": {
-								"scale.x": 5,
-								"scale.y": 5,
+								"scale.x": 3,
+								"scale.y": 3,
 								"image": "WHITE",
 								"tint": 16711680
 							}
@@ -695,9 +697,10 @@
 						{
 							"c": "Text",
 							"p": {
-								"pivot.y": 19,
-								"text": "X",
-								"style.fontSize": 37
+								"y": -3,
+								"text": "×",
+								"style.fontSize": 50,
+								"verticalAlign": "center"
 							}
 						}
 					]
@@ -727,8 +730,8 @@
 								"x": -328,
 								"y": -70,
 								"interactive": true,
-								"scale.x": 34.897,
-								"scale.y": 21.091999999999995,
+								"scale.x": 22,
+								"scale.y": 13,
 								"image": "WHITE",
 								"tint": 0
 							}
