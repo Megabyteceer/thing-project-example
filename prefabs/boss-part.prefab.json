@@ -1,0 +1,9 @@
+{
+	"c": "DSprite",
+	"p": {
+		"name": "boss-part",
+		"x": 434,
+		"y": 448,
+		"image": "ondemand/2.png"
+	}
+}

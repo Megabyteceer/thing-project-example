@@ -5,7 +5,7 @@
 	"title": "THING-РЕДАКТОР\nпримеры",
 	"modal_title": "НАСТРОЙКА ЗВУКА",
 	"settings": {
-		"music_volume": "Громкость Музыки ",
+		"music_volume": "Громкость Музыки",
 		"fx_volume": "Громкость звуков"
 	},
 	"loading": "Загрузка..."

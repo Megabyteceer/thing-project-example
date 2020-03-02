@@ -13,6 +13,7 @@ class Bunny extends DSprite {
 		super.init();
 	}
 
+	
 	onRemove() {
 		super.onRemove();
 	}

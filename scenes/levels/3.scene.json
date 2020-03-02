@@ -8,8 +8,6 @@
 		{
 			"c": "MovieClip",
 			"p": {
-				"x": 250,
-				"y": 250,
 				"image": "bunny.png",
 				"timeline": {
 					"l": {
@@ -324,9 +322,7 @@
 				"x": 256,
 				"y": 233,
 				"scale.x": 0.5,
-				"scale.y": 0.5,
-				"spineData": "img/dragon/dragon.json",
-				"currentAnimation": "flying"
+				"scale.y": 0.5
 			}
 		},
 		{
