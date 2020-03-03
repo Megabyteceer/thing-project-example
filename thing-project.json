@@ -51,5 +51,9 @@
 	"__localesNewKeysPrefix": "",
 	"__externalLocalesSource": "",
 	"defaultLanguage": "en",
-	"__allowUpperCaseFiles": true
+	"__allowUpperCaseFiles": true,
+	"__webpack": {
+		"debug": "config/webpack.debug.js",
+		"production": "config/webpack.prod.js"
+	}
 }

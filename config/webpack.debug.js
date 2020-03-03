@@ -15,6 +15,9 @@ module.exports = merge(common, {
 	output: {
 		path: path.resolve(__dirname, '../debug')
 	},
+	optimization: {
+		minimize: false
+	},
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env.NODE_ENV': JSON.stringify(mode)
