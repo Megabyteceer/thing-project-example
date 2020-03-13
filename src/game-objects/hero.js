@@ -1,6 +1,6 @@
-import Keys from "thing-engine/js/utils/keys.js";
+import Keys from "thing-editor/js/engine/utils/keys.js";
 import Unit from "./unit.js";
-import { stepTo } from "thing-engine/js/utils/utils.js";
+import { stepTo } from "thing-editor/js/engine/utils/utils.js";
 
 class Hero extends Unit {
 

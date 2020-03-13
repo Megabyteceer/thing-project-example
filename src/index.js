@@ -1,4 +1,4 @@
-import game from "thing-engine/js/game.js";
+import game from "thing-editor/js/engine/game.js";
 import "./classes.js";
 
 game.init();

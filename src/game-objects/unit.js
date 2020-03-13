@@ -1,5 +1,5 @@
-import DSprite from "thing-engine/js/components/d-sprite.js";
-import Scene from "thing-engine/js/components/scene.js";
+import DSprite from "thing-editor/js/engine/components/d-sprite.js";
+import Scene from "thing-editor/js/engine/components/scene.js";
 
 class Unit extends DSprite {
 

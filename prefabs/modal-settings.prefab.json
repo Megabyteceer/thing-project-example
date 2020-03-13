@@ -158,6 +158,7 @@
 					"p": {
 						"tint": 14417920,
 						"onClick": "game.hideModal",
+						"hotkey": 27,
 						"sndClick": "click",
 						"sndOver": "over"
 					},

@@ -1,4 +1,4 @@
-import Tilemap from "thing-engine/js/components/tilemap.js";
+import Tilemap from "thing-editor/js/engine/components/tilemap.js";
 
 let tm;
 

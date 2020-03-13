@@ -3,6 +3,7 @@
 	"p": {
 		"x": 49,
 		"y": 191,
-		"image": "ui/___guide-img.jpg"
+		"image": "ui/___guide-img.jpg",
+		"name": "___guide-prefabs/guide-prefab"
 	}
 }

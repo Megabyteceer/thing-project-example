@@ -4,9 +4,6 @@
   "description": "example project for \"thing-editor\" - (visual pixi.js based game editor)",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "webpack-dev-server --open --config config/webpack.dev.js",
-    "build": "webpack --config config/webpack.prod.js"
   },
   "repository": {
     "type": "git",

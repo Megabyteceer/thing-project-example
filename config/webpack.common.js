@@ -3,7 +3,7 @@
 /*global require */
 /*global __dirname */
 const merge = require('webpack-merge');
-const common = require('../../../thing-engine/webpack.global.common.js');
+const common = require('thing-editor/scripts/webpack.global.common.js');
 const path = require('path');
 const fs = require('fs');
 const CopyWebpackPlugin = require('copy-webpack-plugin');

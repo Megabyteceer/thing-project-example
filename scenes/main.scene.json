@@ -7,8 +7,6 @@
 		{
 			"c": "Fill",
 			"p": {
-				"x": 32,
-				"y": 73,
 				"alpha": 0.31,
 				"scale.x": 5,
 				"scale.y": 2.81,
@@ -389,6 +387,7 @@
 				"y": 172,
 				"image": "ui/button.png",
 				"onClick": "game.showModal`modal-settings",
+				"hotkey": 27,
 				"sndClick": "click",
 				"sndOver": "over"
 			}
@@ -479,13 +478,6 @@
 					}
 				}
 			]
-		},
-		{
-			"c": "BgMusic",
-			"p": {
-				"intro": "mus/title_i",
-				"loop": "mus/title"
-			}
 		},
 		{
 			"c": "MovieClip",
@@ -1206,6 +1198,23 @@
 					]
 				},
 				"__previewFrame": 4
+			}
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"x": -7,
+				"y": -21,
+				"scale.x": 0.17,
+				"scale.y": 0.2,
+				"prefabName": "1"
+			}
+		},
+		{
+			"c": "BgMusic",
+			"p": {
+				"intro": "mus/title_i",
+				"loop": "mus/title"
 			}
 		}
 	]

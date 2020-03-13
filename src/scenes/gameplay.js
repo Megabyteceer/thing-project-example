@@ -3,9 +3,9 @@
 *
 */
 
-import Scene from "thing-engine/js/components/scene.js";
+import Scene from "thing-editor/js/engine/components/scene.js";
 import "../utils/tilemap-processor.js";
-import game from "thing-engine/js/game.js";
+import game from "thing-editor/js/engine/game.js";
 
 const CAMERA_BORDER = -110;
 

@@ -27,7 +27,6 @@
 	},
 	"fontHolderText": "ЯSфz",
 	"loadOnDemandSounds": {
-		"mus/shop": 2,
 		"mus/gs3_title": 2
 	},
 	"muteOnFocusLost": true,

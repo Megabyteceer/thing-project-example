@@ -1,7 +1,7 @@
 /*
 *	minimal scene with basic engine methods
 */
-import Scene from "thing-engine/js/components/scene.js";
+import Scene from "thing-editor/js/engine/components/scene.js";
 
 class MainMenu extends Scene {
 	
