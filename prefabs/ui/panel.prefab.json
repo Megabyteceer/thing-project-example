@@ -35,8 +35,8 @@
 						{
 							"c": "DSprite",
 							"p": {
-								"scale.x": 5,
-								"scale.y": 5,
+								"scale.x": 3.125,
+								"scale.y": 3.125,
 								"image": "WHITE",
 								"tint": 16711680
 							}

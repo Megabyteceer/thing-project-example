@@ -234,36 +234,84 @@
 		{
 			"c": "Text",
 			"p": {
-				"x": 37,
-				"y": 435,
-				"text": "spine test (spine version updated. but test dragon is not)",
-				"style.fontSize": 22,
-				"style.align": "left",
-				"style.fill": "#fff"
-			}
-		},
-		{
-			"c": "Text",
-			"p": {
-				"x": 35,
-				"y": 464,
-				"text": "dragon taken from:",
+				"x": 27,
+				"y": 491,
+				"text": "spine animation taken from:",
 				"style.fontSize": 16,
 				"style.align": "left",
 				"style.fill": "#fff"
 			}
 		},
 		{
-			"c": "Text",
+			"c": "Button",
 			"p": {
-				"x": 177,
-				"y": 464,
-				"text": "https://pixijs.io/examples/#/spine/dragon.js",
-				"style.fontSize": 16,
-				"style.align": "left",
-				"style.fill": "#ff0",
-				"style.fontWeight": "bold"
-			}
+				"x": 407,
+				"y": 503,
+				"hoverImage": "EMPTY",
+				"onClick": "game.openUrl`https://bgaming-network.com/play/DeepSea/FUN?server=demo",
+				"sndClick": "click",
+				"sndOver": "over"
+			},
+			":": [
+				{
+					"c": "Text",
+					"p": {
+						"x": -167,
+						"y": -12,
+						"text": "https://bgaming-network.com/play/DeepSea/FUN?server=demo",
+						"style.fontSize": 16,
+						"style.align": "left",
+						"style.fill": "#ff0",
+						"style.fontWeight": "bold"
+					}
+				}
+			]
+		},
+		{
+			"c": "Button",
+			"p": {
+				"x": 129,
+				"y": 425,
+				"hoverImage": "EMPTY",
+				"onClick": "all.spine-test.play`idle",
+				"sndClick": "click",
+				"sndOver": "over"
+			},
+			":": [
+				{
+					"c": "Text",
+					"p": {
+						"text": "ANIMATION 1",
+						"style.fontSize": 22,
+						"verticalAlign": "center",
+						"style.fill": "#ff0",
+						"style.fontWeight": "bold"
+					}
+				}
+			]
+		},
+		{
+			"c": "Button",
+			"p": {
+				"x": 129,
+				"y": 452,
+				"hoverImage": "EMPTY",
+				"onClick": "all.spine-test.play`win",
+				"sndClick": "click",
+				"sndOver": "over"
+			},
+			":": [
+				{
+					"c": "Text",
+					"p": {
+						"text": "ANIMATION 2",
+						"style.fontSize": 22,
+						"verticalAlign": "center",
+						"style.fill": "#ff0",
+						"style.fontWeight": "bold"
+					}
+				}
+			]
 		},
 		{
 			"c": "Text",
@@ -298,8 +346,8 @@
 						{
 							"c": "DSprite",
 							"p": {
-								"scale.x": 5,
-								"scale.y": 5,
+								"scale.x": 3.125,
+								"scale.y": 3.125,
 								"image": "WHITE",
 								"tint": 16711680
 							}
@@ -319,10 +367,14 @@
 		{
 			"c": "Spine",
 			"p": {
-				"x": 256,
-				"y": 233,
+				"name": "spine-test",
+				"x": 127,
+				"y": 354,
 				"scale.x": 0.5,
-				"scale.y": 0.5
+				"scale.y": 0.5,
+				"spineData": "img/spines/BLUE268.json",
+				"currentAnimation": "win",
+				"currentSkin": "default"
 			}
 		},
 		{

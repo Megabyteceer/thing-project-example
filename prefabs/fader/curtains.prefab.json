@@ -20,7 +20,7 @@
 					"c": "MovieClip",
 					"p": {
 						"y": 360,
-						"scale.y": 72,
+						"scale.y": 45,
 						"image": "WHITE",
 						"tint": 0,
 						"timeline": {
@@ -68,21 +68,26 @@
 									"n": "scale.x",
 									"t": [
 										{
-											"v": 1,
+											"v": 0.625,
 											"t": 0
 										},
 										{
-											"v": 64,
+											"v": 40,
 											"t": 15,
 											"m": 1
 										},
 										{
-											"v": 64,
+											"v": 40,
+											"t": 74,
+											"m": 1
+										},
+										{
+											"v": 40,
 											"t": 83,
 											"m": 1
 										},
 										{
-											"v": 1,
+											"v": 0.625,
 											"t": 120,
 											"m": 1
 										}
@@ -90,16 +95,14 @@
 								}
 							]
 						},
-						"x": 0,
-						"scale.x": 1
+						"__previewFrame": 34
 					}
 				},
 				{
 					"c": "MovieClip",
 					"p": {
-						"x": 1275,
 						"y": 360,
-						"scale.y": 72,
+						"scale.y": 45,
 						"image": "WHITE",
 						"tint": 0,
 						"timeline": {
@@ -144,27 +147,27 @@
 									"n": "scale.x",
 									"t": [
 										{
-											"v": 1,
+											"v": 0.625,
 											"t": 0
 										},
 										{
-											"v": 64,
+											"v": 40,
 											"t": 15,
 											"m": 1
 										},
 										{
-											"v": 64,
+											"v": 40,
 											"t": 74,
 											"m": 1,
 											"a": "this.stop"
 										},
 										{
-											"v": 64,
+											"v": 40,
 											"t": 83,
 											"m": 1
 										},
 										{
-											"v": 1,
+											"v": 0.625,
 											"t": 120,
 											"m": 1
 										}
@@ -172,7 +175,7 @@
 								}
 							]
 						},
-						"scale.x": 1
+						"__previewFrame": 11
 					}
 				}
 			]
@@ -180,7 +183,6 @@
 		{
 			"c": "MovieClip",
 			"p": {
-				"alpha": 0,
 				"timeline": {
 					"l": {
 						"hide fader": 216
@@ -235,12 +237,14 @@
 							]
 						}
 					]
-				}
+				},
+				"__previewFrame": 146
 			},
 			":": [
 				{
 					"c": "Text",
 					"p": {
+						"text": "",
 						"translatableText": "loading",
 						"style.fontSize": 35
 					}

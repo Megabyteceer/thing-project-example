@@ -35,8 +35,7 @@
 							]
 						}
 					]
-				},
-				"alpha": 0
+				}
 			},
 			":": [
 				{
@@ -44,6 +43,8 @@
 					"p": {
 						"name": "easyCloseBtn",
 						"alpha": 0.7000000000000001,
+						"scale.x": 0.625,
+						"scale.y": 0.625,
 						"image": "WHITE",
 						"tint": 40,
 						"hoverImage": "WHITE",
@@ -61,8 +62,8 @@
 				"x": -333,
 				"y": -336,
 				"interactive": true,
-				"scale.x": 66,
-				"scale.y": 31.310000000000002,
+				"scale.x": 41.25,
+				"scale.y": 19.56875,
 				"image": "WHITE",
 				"tint": 0
 			}
@@ -105,7 +106,6 @@
 					"c": "MovieClip",
 					"p": {
 						"name": "cursor",
-						"alpha": 0,
 						"scale.x": 0.42,
 						"scale.y": 3.16,
 						"pivot.x": -5,
@@ -158,8 +158,8 @@
 						"x": 112,
 						"y": 2,
 						"alpha": 0.23,
-						"scale.x": 27.8,
-						"scale.y": 4.32,
+						"scale.x": 17.375,
+						"scale.y": 2.7,
 						"image": "WHITE",
 						"hoverImage": "WHITE",
 						"pressImage": "WHITE",
@@ -197,8 +197,8 @@
 						{
 							"c": "MovieClip",
 							"p": {
-								"scale.x": 18.150000000000002,
-								"scale.y": 4.32,
+								"scale.x": 11.343750000000002,
+								"scale.y": 2.7,
 								"image": "WHITE",
 								"tint": 899708,
 								"isPlaying": false,
@@ -233,13 +233,13 @@
 											]
 										}
 									]
-								},
-								"tintG": 186
+								}
 							}
 						},
 						{
 							"c": "Text",
 							"p": {
+								"text": "",
 								"translatableText": "ok",
 								"style.fontSize": 29,
 								"verticalAlign": "center"

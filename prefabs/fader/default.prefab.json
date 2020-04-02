@@ -12,12 +12,11 @@
 		{
 			"c": "MovieClip",
 			"p": {
-				"name": "fader/default",
-				"alpha": 0,
-				"scale.x": 128,
-				"scale.y": 72,
-				"tint": 0,
+				"name": "fader",
+				"scale.x": 80,
+				"scale.y": 45,
 				"image": "WHITE",
+				"tint": 0,
 				"timeline": {
 					"l": {
 						"hide fader": 180
@@ -59,12 +58,14 @@
 							]
 						}
 					]
-				}
+				},
+				"__previewFrame": 1
 			}
 		},
 		{
 			"c": "MovieClip",
 			"p": {
+				"name": "loading-label",
 				"timeline": {
 					"l": {
 						"hide fader": 238
@@ -120,12 +121,13 @@
 						}
 					]
 				},
-				"alpha": 0
+				"__previewFrame": 1
 			},
 			":": [
 				{
 					"c": "Text",
 					"p": {
+						"text": "",
 						"translatableText": "loading",
 						"style.fontSize": 35
 					}

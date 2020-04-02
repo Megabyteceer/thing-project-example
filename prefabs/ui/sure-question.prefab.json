@@ -34,7 +34,7 @@
 						}
 					]
 				},
-				"alpha": 0
+				"__previewFrame": 1
 			},
 			":": [
 				{
@@ -42,6 +42,8 @@
 					"p": {
 						"name": "easyCloseBtn",
 						"alpha": 0.7000000000000001,
+						"scale.x": 0.625,
+						"scale.y": 0.625,
 						"image": "WHITE",
 						"tint": 40,
 						"hoverImage": "WHITE",
@@ -101,9 +103,7 @@
 									]
 								}
 							]
-						},
-						"scale.x": 0,
-						"scale.y": 0
+						}
 					},
 					":": [
 						{
@@ -112,8 +112,8 @@
 								"x": -333,
 								"y": -267,
 								"interactive": true,
-								"scale.x": 66,
-								"scale.y": 54,
+								"scale.x": 41.25,
+								"scale.y": 33.75,
 								"image": "WHITE",
 								"tint": 0
 							}
@@ -123,6 +123,7 @@
 							"p": {
 								"name": "title",
 								"y": -233,
+								"text": "",
 								"translatableText": "modal_title",
 								"style.fontSize": 41,
 								"style.fill": "#0c0",
@@ -154,6 +155,7 @@
 									"p": {
 										"name": "label",
 										"y": -23,
+										"text": "",
 										"translatableText": "ok",
 										"style.fontSize": 35
 									}
@@ -176,6 +178,7 @@
 									"p": {
 										"name": "label",
 										"y": -23,
+										"text": "",
 										"translatableText": "no",
 										"style.fontSize": 35
 									}
