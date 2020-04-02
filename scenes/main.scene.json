@@ -50,6 +50,7 @@
 					"c": "Text",
 					"p": {
 						"y": 57,
+						"text": "",
 						"translatableText": "title",
 						"style.fontSize": 42,
 						"verticalAlign": "center",
@@ -71,6 +72,7 @@
 							"c": "Text",
 							"p": {
 								"name": "mask",
+								"text": "",
 								"translatableText": "title",
 								"style.fontSize": 42,
 								"verticalAlign": "center",
@@ -255,8 +257,8 @@
 				{
 					"c": "PerspectiveSprite",
 					"p": {
-						"x": -38,
-						"y": -92,
+						"x": 28,
+						"y": -15,
 						"image": "bunny.png",
 						"x1": 32,
 						"y2": 64,
@@ -472,6 +474,7 @@
 				{
 					"c": "Text",
 					"p": {
+						"text": "",
 						"translatableText": "title",
 						"textTransform": 1,
 						"maxWidth": 217
@@ -839,7 +842,7 @@
 								"name": "bg",
 								"alpha": 0.5,
 								"interactive": true,
-								"scale.y": 20.8,
+								"scale.y": 13,
 								"image": "WHITE"
 							}
 						},
@@ -902,7 +905,7 @@
 								"name": "bg",
 								"alpha": 0.5,
 								"interactive": true,
-								"scale.y": 20.8,
+								"scale.y": 13,
 								"image": "WHITE"
 							}
 						},

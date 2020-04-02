@@ -1,16 +1,18 @@
 import Lib from "thing-editor/js/engine/lib.js";
 
-class PerspectiveSprite extends PIXI.mesh.Plane {
+class PerspectiveSprite extends PIXI.SimplePlane {
 	
 	constructor() {
 		super(Lib.getTexture('WHITE'), 2 , 2);
+		this.vertices = this.verticesBuffer.data;
 		//this.vertices = [1,2,3,4,5,6,7,8];
 		//this.uvs = [0,0,1,0,1,1,1,0];
 	}
 	
 	update() {
-		this.vertices[0] = Math.random() * -20;
-		this.vertices[1] = Math.random() * 20;
+		this.verticesBuffer.data[0] = Math.random() * -20;
+		this.verticesBuffer.data[1] = Math.random() * 20;
+		this.verticesBuffer.update();
 	}
 	
 	get x0() {

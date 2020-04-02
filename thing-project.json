@@ -54,5 +54,6 @@
 	"__webpack": {
 		"debug": "config/webpack.debug.js",
 		"production": "config/webpack.prod.js"
-	}
+	},
+	"mipmap": false
 }
