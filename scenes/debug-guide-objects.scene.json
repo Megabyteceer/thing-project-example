@@ -125,8 +125,8 @@
 			"c": "PrefabReference",
 			"p": {
 				"name": "__debug-prefab-ref",
-				"x": 36,
-				"y": 48,
+				"x": 46,
+				"y": 105,
 				"prefabName": "__debug-prefabs/debug-prefab"
 			}
 		},
@@ -134,8 +134,8 @@
 			"c": "PrefabReference",
 			"p": {
 				"name": "debug-prefab-ref",
-				"x": 37,
-				"y": 104,
+				"x": 47,
+				"y": 161,
 				"prefabName": "debug-prefabs/__debug-prefab"
 			}
 		},
@@ -143,8 +143,8 @@
 			"c": "PrefabReference",
 			"p": {
 				"name": "___guide-image",
-				"x": 49,
-				"y": 191,
+				"x": 59,
+				"y": 248,
 				"prefabName": "___guide-prefabs/guide-prefab"
 			}
 		},
@@ -186,6 +186,14 @@
 					]
 				}
 			]
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"name": "stats-panel",
+				"alpha": 0.5,
+				"prefabName": "stats-panel"
+			}
 		}
 	]
 }

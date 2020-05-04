@@ -384,6 +384,14 @@
 				"y": 178,
 				"image": "ondemand/2.png"
 			}
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"name": "stats-panel",
+				"alpha": 0.5,
+				"prefabName": "stats-panel"
+			}
 		}
 	]
 }

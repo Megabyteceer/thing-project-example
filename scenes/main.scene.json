@@ -9,7 +9,7 @@
 			"p": {
 				"alpha": 0.31,
 				"scale.x": 5,
-				"scale.y": 2.81,
+				"scale.y": 2.8125,
 				"image": "map/map1.png",
 				"tint": 65280,
 				"xRepeat": 5,
@@ -50,7 +50,6 @@
 					"c": "Text",
 					"p": {
 						"y": 57,
-						"text": "",
 						"translatableText": "title",
 						"style.fontSize": 42,
 						"verticalAlign": "center",
@@ -72,7 +71,7 @@
 							"c": "Text",
 							"p": {
 								"name": "mask",
-								"text": "",
+								"y": 1,
 								"translatableText": "title",
 								"style.fontSize": 42,
 								"verticalAlign": "center",
@@ -300,6 +299,28 @@
 				{
 					"c": "Button",
 					"p": {
+						"x": -829,
+						"y": -59,
+						"image": "ui/button.png",
+						"onClick": "all.music.play`0.2",
+						"sndClick": "click",
+						"sndOver": "over"
+					}
+				},
+				{
+					"c": "Button",
+					"p": {
+						"x": -830,
+						"y": 9,
+						"image": "ui/button.png",
+						"onClick": "all.music.stop`2",
+						"sndClick": "click",
+						"sndOver": "over"
+					}
+				},
+				{
+					"c": "Button",
+					"p": {
 						"x": -1,
 						"y": -29,
 						"image": "ui/button.png",
@@ -379,7 +400,8 @@
 			"p": {
 				"x": 170,
 				"y": 488,
-				"image": "bunny.png"
+				"image": "bunny.png",
+				"xSpeed": 22
 			}
 		},
 		{
@@ -474,7 +496,6 @@
 				{
 					"c": "Text",
 					"p": {
-						"text": "",
 						"translatableText": "title",
 						"textTransform": 1,
 						"maxWidth": 217
@@ -490,7 +511,6 @@
 				"y": 574,
 				"rotation": 0.774,
 				"image": "panel.png",
-				"blendMode": 3,
 				"timeline": {
 					"l": {},
 					"p": 0.02,
@@ -554,17 +574,17 @@
 							"n": "alpha",
 							"t": [
 								{
-									"v": 0.91,
+									"v": 0.7400000000000001,
 									"t": 0,
 									"m": 1
 								},
 								{
-									"v": 1,
+									"v": 0.8300000000000001,
 									"t": 23,
 									"m": 1
 								},
 								{
-									"v": 0.91,
+									"v": 0.7400000000000001,
 									"t": 47,
 									"m": 1,
 									"j": 0
@@ -944,8 +964,21 @@
 		{
 			"c": "Container",
 			"p": {
-				"name": "my-cantainer"
-			}
+				"name": "my-cantainer",
+				"x": 420,
+				"y": 285,
+				"scale.x": 0
+			},
+			":": [
+				{
+					"c": "DSprite",
+					"p": {
+						"x": 371,
+						"y": 264,
+						"image": "bunny.png"
+					}
+				}
+			]
 		},
 		{
 			"c": "SelectionHighlighter",
@@ -1041,7 +1074,6 @@
 			"c": "MovieClip",
 			"p": {
 				"name": "456456456",
-				"y": 448,
 				"image": "bunny.png",
 				"timeline": {
 					"l": {},
@@ -1056,12 +1088,33 @@
 									"t": 0
 								},
 								{
-									"v": 612.951168049362,
-									"t": 14
+									"v": 234,
+									"t": 58,
+									"m": 1
 								},
 								{
-									"v": 820.0092771545454,
-									"t": 125
+									"v": 712,
+									"t": 135,
+									"j": 7,
+									"m": 1
+								}
+							]
+						},
+						{
+							"n": "y",
+							"t": [
+								{
+									"v": 448,
+									"t": 0
+								},
+								{
+									"v": 376,
+									"t": 29
+								},
+								{
+									"v": 558,
+									"t": 75,
+									"j": 7
 								}
 							]
 						}
@@ -1075,7 +1128,9 @@
 				"name": "234234234",
 				"image": "bunny.png",
 				"timeline": {
-					"l": {},
+					"l": {
+						"run": 7
+					},
 					"p": 0.02,
 					"d": 0.85,
 					"f": [
@@ -1158,22 +1213,6 @@
 									"r": 35
 								}
 							]
-						},
-						{
-							"n": "visible",
-							"t": [
-								{
-									"v": true,
-									"t": 0,
-									"m": 2
-								},
-								{
-									"v": false,
-									"t": 22,
-									"m": 2,
-									"r": -1
-								}
-							]
 						}
 					]
 				}
@@ -1185,7 +1224,9 @@
 				"x": 464,
 				"image": "bunny.png",
 				"timeline": {
-					"l": {},
+					"l": {
+						"run": 3
+					},
 					"p": 0.02,
 					"d": 0.85,
 					"f": [
@@ -1198,7 +1239,7 @@
 								},
 								{
 									"v": 342,
-									"t": 14
+									"t": 63
 								}
 							]
 						}
@@ -1220,8 +1261,18 @@
 		{
 			"c": "BgMusic",
 			"p": {
+				"name": "music",
 				"intro": "mus/title_i",
-				"loop": "mus/title"
+				"loop": "mus/title",
+				"resetPositionOnPlay": false
+			}
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"name": "stats-panel",
+				"alpha": 0.5,
+				"prefabName": "stats-panel"
 			}
 		}
 	]

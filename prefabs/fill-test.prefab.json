@@ -1,0 +1,37 @@
+{
+	"c": "MovieClip",
+	"p": {
+		"name": "fill-test",
+		"timeline": {
+			"l": {},
+			"p": 0.02,
+			"d": 0.85,
+			"f": [
+				{
+					"n": "visible",
+					"t": [
+						{
+							"v": true,
+							"t": 0,
+							"m": 2
+						},
+						{
+							"v": true,
+							"t": 22,
+							"m": 2,
+							"a": "this.remove"
+						}
+					]
+				}
+			]
+		}
+	},
+	":": [
+		{
+			"c": "Fill",
+			"p": {
+				"image": "perlin.jpg"
+			}
+		}
+	]
+}

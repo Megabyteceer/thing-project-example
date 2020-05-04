@@ -1,0 +1,27 @@
+{
+	"c": "Container",
+	"p": {
+		"name": "stats-panel"
+	},
+	":": [
+		{
+			"c": "Label",
+			"p": {
+				"name": "stats-panel",
+				"x": 16,
+				"y": 34,
+				"alpha": 0.5,
+				"text": "60",
+				"style.fontSize": 40,
+				"style.align": "left",
+				"verticalAlign": "center",
+				"style.strokeThickness": 2,
+				"style.stroke": "#002255",
+				"dataPath": "FPS",
+				"template": "%d FPS",
+				"isNumeric": true,
+				"decimalsCount": 1
+			}
+		}
+	]
+}

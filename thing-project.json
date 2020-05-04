@@ -32,7 +32,7 @@
 	"muteOnFocusLost": true,
 	"version": "0.0.9",
 	"framesSkipLimit": 4,
-	"localesPath": "locales",
+	"localesPath": "i18n",
 	"embedLocales": true,
 	"loadOnDemandTextures": {
 		"ondemand/2.png": 2,

@@ -676,6 +676,14 @@
 			"p": {
 				"loop": "mus/gs3_title"
 			}
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"name": "stats-panel",
+				"alpha": 0.5,
+				"prefabName": "stats-panel"
+			}
 		}
 	]
 }

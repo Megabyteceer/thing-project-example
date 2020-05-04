@@ -244,7 +244,6 @@
 				{
 					"c": "Text",
 					"p": {
-						"text": "",
 						"translatableText": "loading",
 						"style.fontSize": 35
 					}

@@ -60,7 +60,7 @@
 					"p": {
 						"name": "bg",
 						"scale.x": 1.875,
-						"scale.y": 11.71875,
+						"scale.y": 18.75,
 						"image": "WHITE",
 						"tint": 15360
 					}
@@ -119,7 +119,7 @@
 					"p": {
 						"name": "bg",
 						"scale.x": 1.875,
-						"scale.y": 11.71875,
+						"scale.y": 18.75,
 						"image": "WHITE",
 						"tint": 15360
 					}
@@ -202,6 +202,7 @@
 			"c": "BgMusic",
 			"p": {
 				"loop": "mus/shop",
+				"resetPositionOnPlay": false,
 				"fade": 0.5
 			}
 		}

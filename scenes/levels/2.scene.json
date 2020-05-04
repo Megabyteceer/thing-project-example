@@ -535,7 +535,6 @@
 					"c": "Text",
 					"p": {
 						"y": -22,
-						"text": "",
 						"translatableText": "yes",
 						"style.fontSize": 34,
 						"style.strokeThickness": 5,
@@ -549,7 +548,6 @@
 			"p": {
 				"x": 17,
 				"y": 588,
-				"text": "",
 				"translatableText": "ok",
 				"style.fontSize": 16,
 				"style.align": "left",
@@ -775,6 +773,14 @@
 				"x": 859,
 				"y": 536,
 				"image": "ondemand/1.png"
+			}
+		},
+		{
+			"c": "PrefabReference",
+			"p": {
+				"name": "stats-panel",
+				"alpha": 0.5,
+				"prefabName": "stats-panel"
 			}
 		}
 	]
