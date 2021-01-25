@@ -32,11 +32,14 @@
 	"muteOnFocusLost": true,
 	"version": "0.0.9",
 	"framesSkipLimit": 4,
-	"localesPath": "i18n",
 	"embedLocales": true,
 	"loadOnDemandTextures": {
-		"ondemand/2.png": 2,
-		"ondemand/1.png": 2
+		"ondemand/1.png": 2,
+		"ondemand/2.png": 6,
+		"map/map1.png": 4,
+		"map/floor.png": 4,
+		"blink-wave.png": 8,
+		"perlin.jpg": 8
 	},
 	"__loadOnDemandTexturesFolders": {
 		"ondemand": 2
@@ -55,5 +58,9 @@
 		"debug": "config/webpack.debug.js",
 		"production": "config/webpack.prod.js"
 	},
-	"mipmap": false
+	"mipmap": false,
+	"defaultMusVol": 1,
+	"defaultSoundsVol": 1,
+	"keepSoundWhilePageUpdate": false,
+	"webfontloader": null
 }
